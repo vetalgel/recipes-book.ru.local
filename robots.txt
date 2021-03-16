@@ -12,6 +12,6 @@ Disallow: /templates/
 Disallow: /tmp/
 Disallow: /xmlrpc/
 Disallow: /component/
-Disallow: /images/
+
 Host: recipes-book.ru
 Sitemap: http://recipes-book.ru/index.php?option=com_xmap&view=xml&tmpl=component&id=1
