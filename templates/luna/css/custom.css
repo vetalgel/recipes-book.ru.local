@@ -1,0 +1,276 @@
+
+/*Button Slider*/
+
+.custom-buttom {
+ border: 2px solid #fff;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 7px 33px 7px 9px;
+	border-radius:3px;
+    box-shadow:5px 5px rgba(204, 204, 204, 0.89);
+}
+.custom-buttom:hover
+{
+	text-decoration: none;
+	 color: #ffffff;
+}
+
+/*wk-slideshow*/
+
+.wk-slideshow .next, .wk-slideshow .prev {
+text-align:center;
+z-index: 6;
+color:#fff;
+}
+.home-slide .wk-slideshow .caption 
+{
+background: none;
+bottom: 40%;
+position: absolute;
+z-index: 5;
+}
+
+.wk-slideshow-default > div:hover .prev:after,
+.wk-slideshow-default > div:hover .next:after
+ {
+font-family: "FontAwesome";
+font-size: 70px;
+line-height: 60px;
+font-weight: bold;
+text-shadow:0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.wk-slideshow-default > div:hover .prev,
+.wk-slideshow-default > div:hover .next
+{
+background:  none;
+transition: all 300ms linear 0s;
+height: 60px;
+width: 60px;
+}
+
+.wk-slideshow-default > div:hover .prev:after{
+ content: "\f104";
+}
+	
+.wk-slideshow-default > div:hover .next:after{
+ content: "\f105";
+}
+
+.home-slide .wk-slideshow .caption a
+{
+ text-decoration: none;
+ 
+
+}
+.wk-slideshow .caption a{
+
+text-decoration:none;
+}
+
+/*bold*/
+
+.bold1,
+.bold2,
+.border
+{
+display: inline-block;
+color: #ffffff;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.border{
+padding: 5px 10px;
+border: 1px solid #ffffff;
+}
+
+/*Fonts*/
+
+.font23{
+font-size: 23px;
+line-height: 25px;
+ text-shadow: 1px 1px #000;
+}
+.font52{
+font-size: 52px;
+line-height: 51px;
+color:fff;
+font-weight: 900;
+text-shadow: 1px 1px #000;
+}
+.font52{
+color:#ffffff;
+}
+
+/*Line*/
+.border-line
+{
+position:relative;
+}
+.border-line:before
+{
+background: #ffffff;
+bottom: -13px;
+content: "";
+display: block;
+height: 2px;
+position: absolute;
+width: 130px;
+}
+.border-line:before
+{
+left: 50%;
+margin-left: -60px;
+}
+
+/*Slide*/
+@media (min-width: 320px) and (max-width: 1024px) {
+.font52 { display: none;}
+}
+
+
+@media (max-width: 1200px){
+    	 .sp-megamenu-parent {
+			display: none !important;
+		}
+		#offcanvas-toggler {
+			display: inline-block !important;
+			visibility: visible;
+		}
+}
+
+
+#sp-top-a{
+z-index:0;
+}
+.sp-module .sp-module-title {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+}
+
+
+ .sp-module-title::after {
+
+    border-radius: 5px;
+    content: "";
+    display: block;
+    height: 2px;
+   margin:20px -5px;
+    position: relative;
+    width: 50px;
+    z-index: 1;
+}
+
+.btn-primary:hover{
+box-shadow:0 -3px rgba(0, 0, 0, 0.3) inset;
+text-shadow:0 -1px 0 rgba(0, 0, 0, 0.17);
+border: 0 none;
+}
+.btn-primary{
+box-shadow:0 -3px rgba(0, 0, 0, 0.3) inset;
+text-shadow:0 -1px 0 rgba(0, 0, 0, 0.17);
+border: 0 none;
+}
+
+/* HEADER Kunena
+----------------------------------------------------------------------------------------------- */
+#Kunena td.kprofileboxcnt .k_guest{
+	margin-bottom: 30px;
+	margin-top: 10px;
+	font-size: 36px;
+	font-weight: 200;
+}
+#Kunena td.kprofileboxcnt {
+	text-align:left;
+	width: 95%;
+	vertical-align:middle;
+	padding:5px;
+}
+#Kunena div.kblock {
+	display: table;
+	table-layout:fixed;
+	width: 100%;
+	border: none;
+	margin: 5px 0 0 0;
+	clear: both;
+}
+#Kunena .kblock div.kheader {
+	border-bottom:2px solid;
+	padding:0 10px 0 10px;
+}
+#Kunena .kheader h2,
+#Kunena .kheader h2 a {
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 0;
+}
+#Kunena a {
+	text-decoration: none;
+}
+#Kunena div.kblock > div.kheader, #Kunena .kblock div.kheader{
+	padding: 17px 20px;
+	border:none!important;
+}
+#Kunena a:link,
+#Kunena a:visited,
+#Kunena a:active {}
+#Kunena a:focus {outline: none;}
+#Kunena a:hover {
+	color: #000!important;
+}
+#Kunena tr.krow1 td,#Kunena tr.krow2 td {
+padding: 20px!important;
+}
+#Kunena td.kprofileboxcnt form div.input{
+	overflow: hidden;
+	display: block;
+}
+#Kunena td.kprofileboxcnt form div.input span{
+	float: left;
+	margin-right: 30px;
+	font-weight: lighter;
+} 
+#Kunena td.kprofileboxcnt form div.input span:last-child{
+	margin: 20px 0;
+}
+#Kunena td.kprofileboxcnt form div.input span:last-child input[type="submit"]{
+	border:none;
+	color: #fff;
+	padding: 7px 30px;
+	font-weight: normal;
+}
+#Kunena div.kblock.kpathway{
+	margin: 20px 0;
+}
+#Kunena td.kprofileboxcnt form div.input span input{
+	border-radius: 0;
+	box-shadow: none;
+}
+#Kunena td.kprofileboxcnt form div.klink-block span{
+	margin-right: 10px;
+} 
+#Kunena td.kprofileboxcnt form div.klink-block span a{
+}
+#Kunena td.kprofileboxcnt ul {
+margin: 5px 0 5px 5px;
+padding-left: 0;
+}
+#Kunena td.kprofileboxcnt ul.kprofilebox-link {
+margin: 5px 0;
+}
+
+.zen-skill-bar-percent {
+    color: #fff;
+    font-size: 16px;
+    height: 47px;
+    line-height: 35px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    font-weight: 500;
+}

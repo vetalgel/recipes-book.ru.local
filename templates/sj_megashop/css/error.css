@@ -1,0 +1,74 @@
+/* ******************************
+***********Reset css*********** */
+
+/* //////////////////////////// */
+* {margin: 0; padding: 0;}
+body {
+	color: #444444;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	background:#ffffff;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #666;
+	text-decoration: none;
+}
+img{border: none;}
+h1 {font-size: 200%;}
+h2 {font-size: 180%;}
+h3 {font-size: 160%;}
+h4 {font-size: 140%; font-weight: normal}
+h5 {font-size: 120%;}
+h6 {font-size: 100%;}
+.wrapall {display: block; position: absolute; width: 900px; height: 600px; top: 0; left: 0; right: 0; bottom: 0; margin: auto;}
+.wrap-inner {
+	width: 900px;
+	margin: 0 auto;
+	direction: ltr;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	max-width: 100%;
+}
+
+.contener {
+    display: block;
+    width: 100%;
+}
+.block-main {
+	position: relative; display: block; width: 100%; /*background: url(../images/404/bg404.jpg) center center no-repeat; min-height: 600px;*/
+	padding-top:125px; text-align: center;
+}
+.bg404 {position: absolute; z-index: 1; top: 0; left: 0; width: 100%; height: auto;}
+.first-block, .second-block {position: relative; z-index: 2;}
+.logo {display:block;}
+.title404 {font-weight: 700; font-size: 120px; line-height: 120px; display: block;}
+.mess-code {font-size: 26px; font-weight: 700;}
+.mess-code1 {font-size: 26px; font-weight: 700; margin-bottom: 15px;}
+.mess-code2 {margin: 0 23% 25px;}
+.button {font-size: 12px; font-weight: 700; text-transform: uppercase; color: #ffffff; background: #444444; padding: 8px 25px; margin: 0 3px;}
+.button.bt1:hover {background: #3ab54a;}
+.button.bt2 {background: #3ab54a;}
+.button.bt2:hover {background: #444444;}
+/* Tablet portrait (768x1024) && Small tablet landscape (800x600) */
+@media (min-width: 768px) and (max-width: 979px) {
+	.wrapall {width: 100%;}
+	div.wrap-inner{width:100%;}
+}
+/* Small tablet portrait (600x800) & Mobile landscape (480x320) */
+@media (max-width: 767px){
+.wrapall, .wrap-inner {width: 100%;}
+.wrapall {height: auto;}
+.contener {margin: 20px; width: auto;}
+.bg404 {display: none;}
+.block-main {padding-top: 0;}
+.mess-code2 {margin: 0 0 25px;}
+}
+
+@media (max-width: 479px){
+	.button {display: block;}
+	.button.bt1 {margin-bottom: 5px;}
+}

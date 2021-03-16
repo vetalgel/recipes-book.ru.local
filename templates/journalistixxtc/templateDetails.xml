@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="template" client="site" method="upgrade"> 
+    <name>journalistixxtc</name>
+    <creationDate>2013-04-15</creationDate>
+    <author>JoomlaXTC</author>
+    <copyright>Copyright (c) 2011,2012,2013 Monev Software LLC.  All Rights Reserved</copyright>
+    <license>Commercial / GNU/GPL</license>
+    <authorUrl>http://www.joomlaxtc.com</authorUrl>
+    <version>2.0.2</version>
+    <description>JoomlaXTC Journalistix</description>
+    <files>
+        <filename>component.php</filename>
+        <filename>favicon.ico</filename>
+        <filename>index.php</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>templateDetails.xml</filename>
+        <folder>css</folder>
+        <folder>html</folder>
+        <folder>js</folder>
+        <folder>images</folder>
+        <folder>layouts</folder>
+        <folder>parameters</folder>
+        <folder>XTC</folder>
+    </files>
+    <positions>
+        <position>banner</position>
+        <position>bottom</position>
+        <position>menubar</position>
+        <position>breadcrumb</position>
+        <position>debug</position>
+        <position>elistbtm</position>
+        <position>elistbtm</position>
+        <position>scroller</position>
+        <position>search</position>
+        <position>newsflash</position>
+        <position>login</position>
+        <position>left</position>
+        <position>left2</position>
+        <position>left3</position>
+        <position>mid</position>
+        <position>mid2</position>
+        <position>mid3</position>
+        <position>right</position>
+        <position>right2</position>
+        <position>right3</position>
+        <position>inset</position> 
+        <position>right</position>
+        <position>user1</position>
+        <position>user2</position> 
+        <position>user3</position>
+        <position>user4</position>
+        <position>user5</position>
+        <position>user6</position>
+        <position>user7</position>   
+        <position>user8</position>
+        <position>user9</position>    
+        <position>user10</position>
+        <position>user11</position> 
+        <position>user12</position>
+        <position>user13</position>
+        <position>user14</position>
+        <position>user15</position>
+        <position>user16</position>   
+        <position>user17</position>
+        <position>user18</position>   
+        <position>user19</position>  
+        <position>footer</position> 
+        <position>legals</position>  
+    </positions>
+    <languages folder="language">
+        <language tag="en-GB">en-GB.tpl_journalistixxtc.ini</language>
+        <language tag="en-GB">en-GB.tpl_journalistixxtc.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params" addfieldpath="/templates/journalistixxtc/XTC/elements">
+            <fieldset name="basic">
+                <field name="templateLayout" type="layoutlist" default="default" label="Default Layout" description="Select a default template layout" />
+            </fieldset>
+            <fieldset name="layouts" label="TPL_JXTC_LAYOUTS_LABEL">
+                <field type="layoutgroups" label="Layout Parameters"/>
+            </fieldset>
+            <fieldset name="grids" label="TPL_JXTC_GRIDS_LABEL">
+                <field type="stylegroups" group="grid" label="Grid Parameters"/>
+            </fieldset>
+            <fieldset name="styles" label="TPL_JXTC_STYLES_LABEL">
+                <field type="stylegroups" group="style" label="Colors &amp; Graphics"/>
+            </fieldset>
+            <fieldset name="typos" label="TPL_JXTC_TYPOS_LABEL">
+                <field type="stylegroups" group="typo" label="Typography Parameters"/>
+            </fieldset>
+            <fieldset name="advanced">
+                <field type="xtcparameters" label="System Parameters" description="System parameters for the template framework" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

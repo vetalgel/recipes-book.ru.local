@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <name>Default</name>
+    <description>Journalistix Core Layout</description>
+    <fields name="params">
+        <fieldset name="basic">
+            <field name="xtcgrid" type="parameterlist" group="grid" default="Grid1" label="Grid Style"/>
+            <field name="xtcstyle" type="parameterlist" group="style" default="Style1" label="Template Style"/>
+            <field name="xtctypo" type="parameterlist" group="typo" default="Typo1" label="Typography Style"/>
+        </fieldset>
+    </fields>
+</form>

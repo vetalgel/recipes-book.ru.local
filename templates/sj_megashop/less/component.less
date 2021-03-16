@@ -1,0 +1,354 @@
+/*******************************************
+***          YT Framework: less          ***
+*******************************************/
+
+// --* Component Joomla  *----------------------
+// ---------------------------------------------
+/*   1.List All Categories
+ *   	1.Category Blog
+ *   	2.Featured Articles
+ *   	3.Single Article
+ *   	4.Tags Component
+ *   	5.Archived Articles
+ *   	6.Pagination
+ *   	7.Page Email & Print
+ *   	8.Page Break
+ *   2.Search
+ *   3.Newsfeed
+ *   4.Weblinkitems
+ *   5.User Component
+ *   6.Contact Component
+ */
+
+// 1.List All Categories
+// ---------------------------------------------------------
+div.categories-list{ margin-top: -2px;
+    > div{margin-bottom: 1em;}
+}
+
+    // 1.1 Category Blog
+    // ---------------------------------------------------------
+
+    .blog{
+	.heading-category{font-size: 18px;margin: 0 -15px 0;padding: 0 15px 0;text-transform: uppercase;}
+	.category-desc {margin-bottom: 30px;}
+	.items-leading{
+	    .item{.items-row .item();}
+	}
+
+	.items-row{
+	    .item{margin-bottom: 15px;padding-bottom: 5px;border-bottom: 1px solid #ddd;
+		.item-image{margin: 0 0 20px 0;overflow: hidden;position: relative;z-index: 1;
+		    .listingimg{display: block;.transition(all 0.35s ease-in-out 0s);.translate(0,0px);}
+		    img{.transition(all 0.25s ease-in-out 0s);}
+		    .article-aside{
+			width: 100%;z-index: 1;position: absolute;bottom: 0;box-shadow: 0 1px 0px rgba(255, 255, 255, 0.1) inset; background: @grayDark; .translate(0,100%);
+			.transition(all 0.25s ease-in-out 0s);backface-visibility: hidden;
+			dl.article-info{margin: 0;padding: 10px;
+			}
+		    }
+
+
+		    //Hover item-img
+		    &:hover{
+			.listingimg{.translate(0,-30px);}
+			.article-aside{.translate(0,0);}
+		    }
+		}
+		.pull-left.item-image {margin-right: 30px;}
+
+		.article-header{
+		    h2{ font-size: 18px;margin-bottom: 5px;font-weight: normal;
+			a{.linkGray();}
+		    }
+		}
+		.article-aside {
+		    .article-info{margin-bottom: 10px;}
+		    dd {display: inline-block;color: #fff;margin-right: 10px;font-size: 89%;
+			a {
+			    &:hover {color: @linkColor; text-decoration: underline;}
+			}
+		    }
+		    .creat
+		}
+		.content_rating {margin-bottom:15px;
+		    .unseen.element-invisible {float: left;color: #fff;margin-right: 15px;}
+		}
+
+		.item-tags  .label{padding: 5px;font-weight: normal;margin: 0;}
+
+		// More Colums  Articles
+		&.col-sm-6 {border: none;}
+		&.col-sm-4,
+		&.col-sm-3{border: none;
+		    .pull-left.item-image {float: none !important; margin-right: 0;
+			.listingimg {width: 100%;
+			    img {width: 100%; height: auto;}
+			}
+		    }
+		}
+
+
+	    }
+	}
+
+	.pagination {
+	    ul.pagination {
+		li {
+		    a {
+			i.fa-long-arrow-left {
+			    &:before {content: '\f100';}
+			}
+			i.fa-long-arrow-right {
+			    &:before {content: '\f101';}
+			}
+		    }
+		}
+	    }
+	}
+    dd.create {color: @linkColor2 !important;}
+    }
+
+    // 1.2 Featured Articles
+    // ---------------------------------------------------------
+
+    // 1.3 Single Article
+    // ---------------------------------------------------------
+    .item-page{
+	.article-header{
+	    .blog .items-row .item .article-header();
+	    h2{font-size: 24px;}
+	}
+	.article-aside { display: none;
+	    .blog .items-row .item .article-aside();
+	    .article-info{margin-bottom: 20px;}
+
+	}
+	.img-fulltext{margin-bottom: 20px; text-align: center;}
+	.dt-list {
+	    ul {list-style: none; margin: 0; padding: 0;
+		li {
+		    strong {width: 20px; height: 20px; text-align: center; line-height: 20px; background: @background1; display: inline-block; margin:0 10px; border-radius: 50%; color: #fff;}
+		}
+	    }
+	}
+    }
+
+
+    // 1.4 Category List Tags
+    // ---------------------------------------------------------
+    .tag-category  {
+	.heading-category {margin-bottom: 30px;}
+    }
+
+    // 1.5 Archived Articles
+    // ---------------------------------------------------------
+    div.archive{
+	.filter-search{background: @grayLighter;border-color: @paginationBorder;border-radius: 0;
+	    #limit{width: auto;margin-right: 10px;}
+	    .button {padding: 2.5px 20px;}
+	}
+	#archive-items{
+	    > div{border-top: 1px dotted @inputBorder;padding: 15px 0;
+		&:first-child{border-top: none;}
+
+		h2.item-title{margin: 0;font-size: 115%;}
+		dl.article-info{ color: @grayLight;margin: 0;
+		    dd{  display: inline-block;font-size: 91.7%;line-height: 24px;margin: 0 10px 0 0;padding: 0;}
+		}
+		.intro > p{display: inline;}
+	    }
+	}
+    }
+
+    // 1.6 Pagination
+    // ----------------------------
+    .pagination{height: auto;margin: 5px auto 8px;display: table;
+	ul{
+	    li{margin: 0 2px;overflow: hidden;
+		    a, span{float: none;display: inline-block;padding: 5px 12px;border: 1px solid #ccc;color: @gray;background: #fff;border-radius: 0 !important;
+			    height: 32px;vertical-align: top;
+		    }
+
+		    &.active,&:hover {
+			    span,a{color: #fff;background: @background1 !important;border: 1px solid @background1!important;}
+		    }
+	    }
+	}
+    }
+
+    //1.7 Page Email & Print
+    // ---------------------------------------------------------
+
+
+    // 1.8 Page Break
+    // ---------------------------------------------------------
+   .pagenavcounter{font-size: 18px;font-weight: bold;margin-bottom: 1em;}
+    .article-index {margin: 0px 0px 0px 20px;
+	.nav-stacked {border: solid 1px #ccc;border-radius: 0px;overflow: hidden;
+	    li {border-bottom: solid 1px #ccc;float: none;
+		a {border: none;margin: 0px;border-radius: 0px;}
+	    }
+	}
+    }
+    .pager li > a, .pager li > span{border-radius: 0;}
+
+
+
+// ---------------------------------------------------------
+// GENERIC JOOMLA PAGE
+// ---------------------------------------------------------
+
+// 2.Search
+// ---------------------------------------------------------
+// Search Component
+.search{
+    #searchForm{
+       .searchintro{margin: 15px 0;}
+       .phrases-box {margin-left: 20px;}
+       .button {padding: 5px 10px;
+	.fa {margin: 0;}
+       }
+    }
+    .search-results{clear: both;
+        .result-category{display: none;}
+        .result-category,.result-text{padding: 0;margin: 0;}
+        .result-text{padding-bottom: 1em;margin-bottom: 1em; border-bottom: 1px solid @paginationBorder;}
+    }
+}
+
+// Smart Search Component
+.finder{
+    #search-form{background: #ECF0E8;border-bottom: 1px solid @paginationBorder;padding: 20px;margin-bottom: 30px;
+        #finder-search{margin: 0;
+	    .word {
+		label {min-width: 85px;}
+	    }
+            #advanced-search{padding: 10px 0 0;
+                #finder-filter-window{
+                    ul{list-style: none;margin: 0;
+                        li {margin-bottom: 10px;
+                            label{width:150px;}
+                        }
+                    }
+                }
+            }
+	    .button {padding: 5px 20px;}
+        }
+
+    }
+    #search-results{
+        #search-query-explained{margin: 1em 0;border-bottom: 3px solid @grayLighter;font-weight: bold;.box-shadow(inset 0 -1px 0 @inputBorder)}
+        ul.list-striped {margin: 0;list-style: none;
+            li{margin-bottom: 1em;padding-bottom: 1em;border-bottom: 1px solid #eee;
+                .result-url{color: @grayLight;}
+            }
+        }
+    }
+    .bt-finder {padding:5px 20px !important;}
+}
+
+// 3.Newsfeed
+// ---------------------------------------------------------
+.newsfeed-category,
+.contact-category{
+    select[multiple], select[size]{width: auto;}
+}
+.newsfeed {
+
+    ol{margin: 0;list-style: none;padding: 0;
+        li{ border-bottom: 1px dotted @inputBorder;padding: 20px 0;
+            a{color: @navbarText;font-weight: normal;}
+            .feed-item-description{ margin-top: 10px;overflow: hidden;
+                > img:first-child{ background: none repeat scroll 0 0 @white;border: 1px solid @grayLighter;margin: 0 0 10px 15px;padding: 5px;}
+            }
+
+        }
+    }
+}
+
+// 4.Weblink
+// ---------------------------------------------------------
+.weblink-category{
+    select[multiple], select[size]{width: auto !important;}
+}
+
+// 5.User Component
+// ---------------------------------------------------------
+h1.title{font-size: 180%;}
+h2.subtitle{font-size: 130%;}
+
+// Login Form
+.view-login{
+    #system-message{width: 550px;margin: 0 auto;}
+    #content #yt_component{border: none;.box-shadow(none);}
+    .wrap-login{width: 550px;margin: 0 auto;padding: 1em 2em 2em;background: @white;border: 1px solid @inputBorder;box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+        .page-header{margin: -14px -28px 15px;padding: 10px 25px;background: @tableBackgroundHover;border-bottom: 1px solid @paginationBorder;
+            h1{margin: 0;}
+        }
+        .box-sizing(border-box);
+        .form-horizontal .control-group{float: left;width:50%;margin: 1em 0;}
+        .form-horizontal .control-label{float: none;}
+        .form-horizontal .controls input{width:180px;}
+        .other-link{overflow: hidden;
+            ul.yt-list{margin: 0 0 0 15px;
+                li{float: left;margin-right: 30px;
+                    a{font-size: 12px;color: @gray;
+                        &:hover{color: @linkColor;}
+                    }
+                }
+            }
+        }
+    }
+
+}
+.wrap-login .login .page-header h1.title {margin-top: -5px;}
+.login{
+    .form-horizontal{margin-bottom: 0;
+	.control-label{margin-right: 30px; float: left; width: 60px; padding-top: 4px;}
+    }
+    .well{background: none;border: none;border-radius: 0;box-shadow: none;padding: 10px 0 0;margin: 0;
+        .control-label{
+            label{font-weight: bold;}
+        }
+        .controls{margin: 0;}
+    }
+}
+
+
+//Register
+.registration{
+    .page-header{margin: 0 0 15px;
+        h2{margin: 0;}
+    }
+    .form-horizontal .control-label{text-align: left;
+        label{font-weight: bold;}
+    }
+}
+.reset,.remind{
+    .control-label{.registration .form-horizontal .control-label();}
+}
+
+// 6.Contact Component
+// ---------------------------------------------------------
+div.contact{
+    h3.jicons-text{font-size: 120%;}
+    ul.blank li,.contact-misc,form.box legend{color: @grayLight;}
+    .contact-image{width:50%;float: right;
+        img{padding: 5px;border: 1px solid @inputBorder;margin-top: 1em;.box-sizing(border-box);}
+    }
+    textarea, input{width:300px;}
+    textarea{height: 100px;}
+    .contact-address,.contact-contactinfo,.contact-miscinfo{margin-bottom: 2em;}
+
+    form.box {
+	fieldset{border: none;padding: 0;}
+	legend{padding: 0;font-size: 12px;}
+    }
+}
+
+.newsletter .acymailing_modulenewsletter .acymailing_form{
+    .acyfield_email input.inputbox.invalid {border: 1px solid red;}
+    .acysubbuttons input.button {padding: 8px 20px 7px 20px;}
+}

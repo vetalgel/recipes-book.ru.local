@@ -1,0 +1,41 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA Portfolio Template for Joomla 2.5
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+/* NAVIGATION + TOOLBAR
+--------------------------------------------------------- */
+body.iphone #ja-toolbar-main ul#ja-iphonemenu li {
+	background-color: #f0f0f0;
+}
+/* Toolbar Top ---*/
+
+/* Toolbar Main---*/
+
+/* Toolbar Title ---*/
+
+/* Toolbox */
+
+/* Overlay */
+
+/* Menu */
+body.iphone a.ip-button {
+	max-width: none;
+}
+/* Search */
+body.iphone #ja-search .inputbox {
+	border: 1px solid #caccce;
+	background: url(../images/grad-l1.gif) repeat-x center bottom;
+	height: 16px;
+	font-weight: normal;
+}
+/* Login */
+
+/* Clean style from outside addons ---*/

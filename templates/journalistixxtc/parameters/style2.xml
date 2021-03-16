@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<name>Style 2</name>
+
+	<description>This is style #2 - Style 2 Parameters are set in the parameters/style2.xml - The stylesheet style2.css can be found in the template css folder.  For more information on editing the parameters and the css please refer to the X-Framework user guide.</description>
+	 <fields name="params">
+	<fieldset name="basic">
+    <field name="logoImg" type="templateimage" directory="logos" default="logo1.png" label="Website Logo Image" description="Select a Logo."/>
+  
+    <field type="xspacer" title="Region 1"/>	
+	<field name="region1wrap" type="colorpicker" default="" label="Region 1 Wrap Background Color" description="Region 1 Wrap Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region1wrapimage" type="templateimage" directory="backgrounds" default="topbar.png" label="Region 1 Wrap Background Image (Optional)" description="Background Image for Region 1 Wrap "/>
+    <field name="region1wrapposition" type="combobox" default="repeat-x top left" label="Region 1 Wrap Background Image Position" description="Set Position of Region 1 Wrap  Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+	<field name="region1" type="colorpicker" default="" label="Region 1 Background Color" description="Region 1 Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region1image" type="templateimage" directory="backgrounds" default="" label="Region 1 Background Image (Optional)" description="Background Image for Region 1"/>
+    <field name="region1position" type="combobox" default="" label="Region 1 Background Image Position" description="Set Position of Region 1 Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+	
+    <field type="xspacer" title="Region 2"/>	
+	<field name="region2wrap" type="colorpicker" default="#d9d6d7" label="Region 2 Wrap Background Color" description="Region 2 Wrap Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region2wrapimage" type="templateimage" directory="backgrounds" default="diamond-blue1.png" label="Region 2 Wrap Background Image (Optional)" description="Background Image for Region 2 Wrap "/>
+    <field name="region2wrapposition" type="combobox" default="repeat" label="Region 2 Wrap Background Image Position" description="Set Position of Region 1 Wrap  Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+	<field name="region2" type="colorpicker" default="" label="Region 2 Background Color" description="Region 2 Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region2image" type="templateimage" directory="backgrounds" default="" label="Region 2 Background Image (Optional)" description="Background Image for Region 2"/>
+    <field name="region2position" type="combobox" default="" label="Region 2 Background Image Position" description="Set Position of Region 2 Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+
+    <field name="mainslideshow" type="templateimage" directory="" default="cameraguy-blue.png" label="Main Slideshow Background Image (Optional)" description="Background Image for Main Slideshow "/>
+    <field name="mainslideshowposition" type="combobox" default="bottom right no-repeat" label="Main Slideshow Background Image Position" description="Set Position of Main Slideshow Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+    <field type="xspacer" title="Region 3"/>	
+	<field name="region3wrap" type="colorpicker" default="" label="Region 3 Wrap Background Color" description="Region 3 Wrap Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region3wrapimage" type="templateimage" directory="backgrounds" default="outer_header_bg_style1.png" label="Region 3 Wrap Background Image (Optional)" description="Background Image for Region 3 Wrap "/>
+    <field name="region3wrapposition" type="combobox" default="repeat-x 0 0" label="Region 2 Wrap Background Image Position" description="Set Position of Region 3 Wrap  Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+	<field name="region3" type="colorpicker" default="" label="Region 3 Background Color" description="Region 3 Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region3image" type="templateimage" directory="backgrounds" default="" label="Region 3 Background Image (Optional)" description="Background Image for Region 3"/>
+    <field name="region3position" type="combobox" default="" label="Region 3 Background Image Position" description="Set Position of Region 3 Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+
+
+    <field type="xspacer" title="Region 4"/>	
+	<field name="region4wrap" type="colorpicker" default="#ebebeb" label="Region 4 Wrap Background Color" description="Region 4 Wrap Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region4wrapimage" type="templateimage" directory="backgrounds" default="outer_container2_wrap_style1.png" label="Region 4 Wrap Background Image (Optional)" description="Background Image for Region 4 Wrap "/>
+    <field name="region4wrapposition" type="combobox" default="repeat-x 0 0" label="Region 4 Wrap Background Image Position" description="Set Position of Region 4 Wrap  Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+	<field name="region4" type="colorpicker" default="" label="Region 4 Background Color" description="Region 4 Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region4image" type="templateimage" directory="backgrounds" default="outer_container2_style1.png" label="Region 4 Background Image (Optional)" description="Background Image for Region 4"/>
+    <field name="region4position" type="combobox" default="repeat-x 0 100%" label="Region 4 Background Image Position" description="Set Position of Region 4 Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+
+    <field type="xspacer" title="Region 5"/>	
+	<field name="region5wrap" type="colorpicker" default="#ebebeb" label="Region 5 Wrap Background Color" description="Region 5 Wrap Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region5wrapimage" type="templateimage" directory="backgrounds" default="outer_conatiner3_style1.png" label="Region 5 Wrap Background Image (Optional)" description="Background Image for Region 5 Wrap "/>
+    <field name="region5wrapposition" type="combobox" default="repeat-x 0 0" label="Region 5 Wrap Background Image Position" description="Set Position of Region 5 Wrap  Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+	<field name="region5" type="colorpicker" default="" label="Region 5 Background Color" description="Region 5 Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region5image" type="templateimage" directory="backgrounds" default="" label="Region 5 Background Image (Optional)" description="Background Image for Region 5"/>
+    <field name="region5position" type="combobox" default="" label="Region 5 Background Image Position" description="Set Position of Region 5 Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+
+
+    <field type="xspacer" title="Region 6"/>	
+	<field name="region6wrap" type="colorpicker" default="#252d36" label="Region 6 Wrap Background Color" description="Region 6 Wrap Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region6wrapimage" type="templateimage" directory="backgrounds" default="" label="Region 6 Wrap Background Image (Optional)" description="Background Image for Region 6 Wrap "/>
+    <field name="region6wrapposition" type="combobox" default="" label="Region 6 Wrap Background Image Position" description="Set Position of Region 6 Wrap  Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+	<field name="region6" type="colorpicker" default="" label="Region 6 Background Color" description="Region 6 Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region6image" type="templateimage" directory="backgrounds" default="" label="Region 6 Background Image (Optional)" description="Background Image for Region 6"/>
+    <field name="region6position" type="combobox" default="" label="Region 6 Background Image Position" description="Set Position of Region 6 Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+
+    <field type="xspacer" title="Region 7"/>	
+	<field name="region7wrap" type="colorpicker" default="#B2B2B2" label="Region 7 Wrap Background Color" description="Region 7 Wrap Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region7wrapimage" type="templateimage" directory="backgrounds" default="" label="Region 7 Wrap Background Image (Optional)" description="Background Image for Region 7 Wrap "/>
+    <field name="region7wrapposition" type="combobox" default="" label="Region 7 Wrap Background Image Position" description="Set Position of Region 7 Wrap  Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+	<field name="region7" type="colorpicker" default="" label="Region 7 Background Color" description="Region 7 Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region7image" type="templateimage" directory="backgrounds" default="" label="Region 7 Background Image (Optional)" description="Background Image for Region 7"/>
+    <field name="region7position" type="combobox" default="" label="Region 7 Background Image Position" description="Set Position of Region 7 Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+    <field type="xspacer" title="Region 8"/>	
+	<field name="region8wrap" type="colorpicker" default="#F4F4F4" label="Region 8 Wrap Background Color" description="Region 8 Wrap Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region8wrapimage" type="templateimage" directory="backgrounds" default="" label="Region 8 Wrap Background Image (Optional)" description="Background Image for Region 8 Wrap "/>
+    <field name="region8wrapposition" type="combobox" default="" label="Region 8 Wrap Background Image Position" description="Set Position of Region 8 Wrap  Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+	<field name="region8" type="colorpicker" default="" label="Region 8 Background Color" description="Region 8 Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region8image" type="templateimage" directory="backgrounds" default="" label="Region 8 Background Image (Optional)" description="Background Image for Region 8"/>
+    <field name="region8position" type="combobox" default="" label="Region 8 Background Image Position" description="Set Position of Region 8 Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+
+    <field type="xspacer" title="Region 9"/>	
+	<field name="region9wrap" type="colorpicker" default="#4c4c4c" label="Region 9 Wrap Background Color" description="Region 9 Wrap Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region9wrapimage" type="templateimage" directory="backgrounds" default="" label="Region 9 Wrap Background Image (Optional)" description="Background Image for Region 9 Wrap "/>
+    <field name="region9wrapposition" type="combobox" default="" label="Region 9 Wrap Background Image Position" description="Set Position of Region 9 Wrap  Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+	<field name="region9" type="colorpicker" default="" label="Region 9 Background Color" description="Region 9 Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region9image" type="templateimage" directory="backgrounds" default="" label="Region 9 Background Image (Optional)" description="Background Image for Region 9"/>
+    <field name="region9position" type="combobox" default="" label="Region 9 Background Image Position" description="Set Position of Region 9 Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+    <field type="xspacer" title="Region 10"/>	
+	<field name="region10wrap" type="colorpicker" default="#212121" label="Region 10 Wrap Background Color" description="Region 10 Wrap Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region10wrapimage" type="templateimage" directory="backgrounds" default="" label="Region 10 Wrap Background Image (Optional)" description="Background Image for Region 10 Wrap "/>
+    <field name="region10wrapposition" type="combobox" default="" label="Region 10 Wrap Background Image Position" description="Set Position of Region 10 Wrap  Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+	<field name="region10" type="colorpicker" default="" label="Region 10 Background Color" description="Region 10 Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="region10image" type="templateimage" directory="backgrounds" default="" label="Region 10 Background Image (Optional)" description="Background Image for Region 10"/>
+    <field name="region10position" type="combobox" default="" label="Region 10 Background Image Position" description="Set Position of Region 10 Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+    <field type="xspacer" title="MAIN MENU STYLE"/>
+	 <field type="xspacer" title="Top Navigation Styling"/>
+    <field name="menubg_bgimage" type="templateimage" directory="backgrounds" default="" label="Top Navigation Bar Background Image" description="Main Menu Navigation Background Image"/>
+    <field name="menubg_bgimageposition" type="combobox" default="repeat-x top left" label="Top Navigation Bar Background Image Position" description="Set Position of Main Menu Navigation Bar Background Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+      <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+    <field name="menutopbg_bgcolor" type="colorpicker" default="#ebebeb" label="Main Menu  Background Color" description="Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field type="xspacer" title="Main Menu Styling"/>
+    <field name="menulibg_bg" type="templateimage" directory="menus" default="menu_sep_style1.png" label="Top Navigation Li Background Image" description="Main Menu Li Navigation Background Image"/>
+    <field name="menulibg_bgimageposition" type="combobox" default="no-repeat top right" label="Top Navigation Li Bar Background Image Position" description="Set Position of Main Menu Li Navigation Bar Background Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+      <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+    <field name="menulibg_bgcolor" type="colorpicker" default="transparent" label="Main Menu Li Background Color" description="Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field name="menubg_activeimage" type="templateimage" directory="menus" default="menu_active_tan.png" label="Main Menu Active Background Image" description="Main Menu Active Background Image"/>
+    <field name="menubg_activeimageposition" type="combobox" default="no-repeat 50% 0" label="Main Menu Active Image Position" description="Set Position of Main Menu Active Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+      <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+    <field name="menubg_activeimagebgcolor" type="colorpicker" default="" label="Main Menu Link Active Background Color" description="Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field name="menufont_color" type="colorpicker" default="#999999" label="Main Menu Link Font Color" description="Font Color for Main Navigation Buttons"/>
+    <field name="menufontactive_color" type="colorpicker" default="#FFFFFF" label="Main Menu Link Active Font Color" description="Font Color for the Main Menu when selected"/>
+	 <field name="menubg_liactiveimage" type="templateimage" directory="menus" default="" label="Navigation Bar Bottom Tick Active Background Image" description="Main Menu Navigation Bar Bottom Active Background Image"/>
+    <field name="menubg_liactiveimageposition" type="combobox" default="no-repeat bottom center" label="Navigation Bar Bottom Tick Active Image Position" description="Set Position of Main Menu Navigation Bar Bottom Active Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+      <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+    <field name="menubg_liactiveimagebgcolor" type="colorpicker" default="transparent" label="Navigation Bar Bottom Tick Active Background Color" description="Main Menu Navigation Bar Bottom Active Background Color - Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+	 <field name="menubg_lihoverimage" type="templateimage" directory="menus" default="menu_sep_style1.png" label="Navigation Bar Li Hover Background Image" description="Main Menu Navigation Bar Li Hover Background Image"/>
+    <field name="menubg_lihoverimageposition" type="combobox" default="no-repeat top right" label="Navigation Bar Li Hover Image Position" description="Set Position of Main Menu Navigation Bar Li Hover Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+      <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+    <field name="menubg_lihoverimagebgcolor" type="colorpicker" default="" label="Navigation Bar Li Hover Background Color" description="Main Menu Navigation Bar Li Hover Background Color - Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+	 <field name="menubg_liahoverimage" type="templateimage" directory="menus" default="menu_hover.png" label="Navigation Bar A Hover Background Image" description="Main Menu Navigation Bar A Hover Background Image"/>
+    <field name="menubg_liahoverimageposition" type="combobox" default="no-repeat top center" label="Navigation Bar A Hover Image Position" description="Set Position of Main Menu Navigation Bar A Hover Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+      <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+    <field name="menubg_liahoverimagebgcolor" type="colorpicker" default="" label="Navigation Bar A Hover Background Color" description="Main Menu Navigation Bar A Hover Background Color - Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field type="xspacer" title="Navigation Bar Drop Down Styles"/>
+	
+    <field name="dropbg_color" type="colorpicker" default="#272626" label="Navigation Bar Drop Down Menu Background Color" description="Background Color for Drop-down Menus"/>
+    <field name="menuline" type="templateimage" directory="menus" default="" label="Navigation Bar Drop Down Menu Seperator" description="Drop Down Menu Background Image as Seperator. The image list is pulled from the template/images/menus folder"/>
+    <field name="dropfont_color" type="colorpicker" default="#aaaaaa" label="Navigation Bar Drop Down Menu Font Color" description="Font Color for Drop-down Menus"/>
+    <field name="dropfonthover_color" type="colorpicker" default="#ffffff" label="Navigation Bar Drop Down Menu Hover Font Color" description="Font Color for the Drop Down Menu when mouse hover"/>
+    <field name="dropfontactive_color" type="colorpicker" default="#ffffff" label="Navigation Bar Drop Down Menu Active Font Color" description="Font Color for the Drop Down Menus when selected"/>
+    <field type="xspacer" title="MODULE"/>
+	<field name="modbkgcolor" type="colorpicker" default="transparent" label="Default Module Background Color" description="Default Module Background Color: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>		
+    <field name="modbkgimage" type="templateimage" directory="backgrounds" default="" label="Default Module Background Image (Optional)" description="Background Image for Default Module"/>
+    <field name="modbkgposition" type="combobox" default="" label="Module Background Image Position" description="Set Position of Module Background Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+    <field name="modbkgbordercolor" type="text" default="" label="Module Border Color" description="Module Border Color"/>
+    <field name="modbkgborderstyle" type="text" default="" label="Module Border Style" description="Module Border Style"/>
+    <field name="modbkgborderwidth" type="text" default="" label="Module Border Type" description="Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+	<field name="modtitlebkgcolor" type="colorpicker" default="" label="Default Module Title Background Color" description="Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+	<field name="modtitlebordercolor" type="text" default="" label="Module Title Border Color" description="Module Title Border Color"/>
+    <field name="modtitleborderstyle" type="text" default="" label="Module Title Border Style" description="Module Title Border Style"/>
+    <field name="modtitleborderwidth" type="text" default="" label="Module Title Border Type" description="Module Title Border Type"/>
+    <field name="modtitlefirstword" type="colorpicker" default="#536479" label="Default Module Title First Word Font Color" description="Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+	<field name="modtitlesecondword" type="colorpicker" default="#999999" label="Default Module Title Rest Words Font Color" description="Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+	<field name="modicon" type="templateimage" directory="icons" default="" label="Module Suffix Icon" description="Default module Icon"/>
+	<field name="modiconimageposition" type="combobox" default="" label="Module Icon Image Position" description="Set Position of Icon Image - Use Pre Defined Settings or Type You Own Position">
+      <option value="no-repeat top center">Position Top Center</option>
+	  <option value="no-repeat bottom center">Position Bottom Center</option>
+      <option value="repeat-x top left">Repeat Image Top Left To Top Right</option>
+      <option value="repeat-y top center">Repeat Image Top Center To Bottom</option>
+      <option value="repeat">Repeat</option>
+    </field>
+	<field name="modiconpad" type="text" default="" label="Module Icon Padding" description="Padding for the icon"/>
+	  <field type="xspacer" title="JOOMLA TYPOGRAPHY STYLE"/>
+    <field name="body_color" type="colorpicker" default="#999999" label="Global Body Text Color" description="Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field name="p_color" type="colorpicker" default="#999999" label="Global P Text Color" description="Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field name="comHead_color" type="colorpicker" default="#536479" label="Component Heading Font Color" description="Font Color for Component Headings : Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field name="conHead_color" type="colorpicker" default="#999999" label="Content Heading Font Color" description="Font Color for Joomla Content Headings : Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field name="h1_color" type="colorpicker" default="#999999" label="H1 Font Color" description="Font Color for H1: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field name="h2_color" type="colorpicker" default="#536479" label="H2 Font Color" description="Font Color for H2: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field name="h3_color" type="colorpicker" default="#536479" label="H3 Font Color" description="Font Color for H3: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field name="h4_color" type="colorpicker" default="#999999" label="H4 Font Color" description="Font Color for H4: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field name="h5_color" type="colorpicker" default="#999999" label="H5 Font Color" description="Font Color for H5: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field name="h6_color" type="colorpicker" default="#999999" label="H6 Font Color" description="Font Color for H6: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field name="link_color" type="colorpicker" default="#536479" label="Global Link color" description="Font Color for Link: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field name="linkhover_color" type="colorpicker" default="#536479" label="Global Link Hover Color" description="Font Color for Link Hover: Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field name="linkactive_color" type="colorpicker" default="#536479" label="Global Link Active Color" description="Font Color for Link Active: Enter Hex values only, don't include # hex sybmbol. Enter transparent for none."/>
+    <field name="linkvisited_color" type="colorpicker" default="#536479" label="Global Link Visited Color" description="Font Color for Link Visited: Enter Hex values only, don't include # hex sybmbol. Enter transparent for none."/>
+    <field name="basecolor1" type="colorpicker" default="#c4bdac" label="Base Text Color 1" description="Used in Modules and 3rd party components - Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/>
+    <field name="basecolor2" type="colorpicker" default="#999999" label="Base Text Color 2" description="Used in Modules and 3rd party components - Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/> 
+	 <field name="basecolor3" type="colorpicker" default="#536479" label="Base Text Color 3" description="Used in Modules and 3rd party components - Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/> 
+	  <field name="basecolor4" type="colorpicker" default="#536479" label="Base Text Color 4" description="Used in Modules and 3rd party components - Enter Hex or CSS3 RGBA Values Only - Enter transparent for none."/> 
+
+	</fieldset>
+	</fields>
+</form>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<name>Default</name>
+	<description>A template layout based on regions</description>
+   <fields name="params">
+	<fieldset name="basic">
+		<field name="wrapperwidth" type="text" default="980" label="Main Wrap Width" description="Change The Width Of Main Wrapper"/>
+		<field name="columnseparatorwidth" type="text" default="30" label="Separator between columns" description="in pixels"/>
+		<field name="regionseparatorwidth" type="text" default="20" label="Separator between regions" description="in pixels"/>
+		<field name="leftwidth" type="text" default="220" label="Left Width" description="Change The Width Of Left Position"/>
+		<field name="rightwidth" type="text" default="220" label="Right Width" description="Change The Width Of Right Position"/>
+		<field name="regioncfg" type="text" default="1,2,3,4,5,6,7,8,9,10" label="Region Order" description="Choose the Region display order from top to bottom, enter region numbers 1 thru 10 separated by comma."/>
+		<field name="headjs" type="textarea" default="" label="Head Javascript" rows="5" cols="50" description="Enter any custom Javascript code you wish to put at the end of the HEAD section of the template."/>
+		<field name="footjs" type="textarea" default="" label="Foot Javascript" rows="5" cols="50" description="Enter any custom Javascript code you wish to put at the end of the BODY section of the template."/>
+	</fieldset>
+	</fields>
+</form>

@@ -1,0 +1,265 @@
+#top1 .mod-languages ul.dropdown-menu {
+  min-width: 95px;
+  padding-bottom: 0;
+}
+#top1 .mod-languages ul.dropdown-menu li a {
+  padding: 7px;
+}
+#banner {
+  margin-bottom: 20px;
+}
+#g-about .customersay .yt-extra-carousel .carousel-control .fa-angle-left:before {
+  line-height: 10px;
+}
+.module.jshopcat {
+  margin-bottom: 0;
+}
+.module.jshopcat .sj-categories {
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+.btn-special .icon-pushpin:before {
+  content: "\f08d";
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+  font-family: FontAwesome;
+}
+#top2 ul.yt-loginform.menu li {
+  list-style: none;
+  display: inline;
+}
+#top2 ul.yt-loginform.menu li a {
+  padding: 0 10px;
+  position: relative;
+  line-height: 53px;
+  border-right: 1px solid #ccc;
+  color: #fff;
+  font-size: 12px;
+  font-family: arial;
+}
+#top2 ul.yt-loginform.menu li a:hover {
+  color: #e83b34;
+}
+#top2 ul.yt-loginform.menu #myLogin form.form-inline ul li a {
+  border-right: none;
+}
+#top2 #logout-form {
+  text-align: right;
+}
+#top2 #logout-form .logout-button {
+  padding: 0 7px 0 7px;
+}
+.yt-loginform li {
+  list-style: none;
+}
+#myLogin {
+  color: ;
+  border: none;
+  background: #fff;
+}
+#myLogin h3.title {
+  font-size: 220%;
+  margin-bottom: 15px;
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  padding: 10px 20px;
+}
+#myLogin .userdata {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#myLogin ul.listlogin {
+  border-top: 1px solid #ddd;
+  padding-top: 1em;
+  margin: 0;
+}
+#myLogin ul.listlogin li {
+  padding: 5px 0;
+}
+#myLogin ul.listlogin li a {
+  color:  !important;
+}
+#myLogin ul.listlogin li a:hover {
+  color: #e83b34 !important;
+}
+#myLogin.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: ;
+  overflow: auto;
+  width: 560px;
+  height: 300px;
+  margin: -250px 0 0 -280px;
+  background-color: ;
+  border: 1px solid #999;
+  border: 1px solid rgba(0,0,0,0.3);
+  *border: 1px solid #999;
+}
+#myLogin.modal.fade {
+  top: -25%;
+}
+#myLogin.modal.fade.in {
+  top: 50%;
+}
+.mod-jcurrency {
+  width: 107px;
+}
+.mod-jcurrency select option {
+  background: #e83b34;
+}
+.productfull .jshop_product .c_product .jshop_prod_attributes .clist .slist .sl select {
+  width: 250px;
+  padding-right: 0;
+}
+.productfull .jshop_product .c_product .jshop_prod_attributes .clist .slist .sl select option {
+  width: 250px;
+}
+.jCarouselLite ul li {
+  display: inline;
+}
+.jshop_list_product .block_sorting_count_to_page .box_products_count_to_page .wrap-inputbox select,
+.jshop_list_product .block_sorting_count_to_page .box_products_sorting .wrap-inputbox select {
+  padding-left: 10px;
+}
+.productfull .jshop_product .c_product .buttons .add-wishlist {
+  background: #e83b34;
+}
+.productfull .jshop_product .c_product .buttons .add-wishlist .fa.fa-heart {
+  position: absolute;
+  left: -18px;
+  height: 36px;
+  width: 33px;
+  background: #ed6762;
+  line-height: 36px;
+  padding-left: 8px;
+  color: ;
+}
+.productfull .jshop_product .c_product .buttons .add-wishlist .fa.fa-heart:hover {
+  background: #5e5e5e;
+}
+.productfull .jshop_product .c_product .buttons .add-wishlist .btwishlist {
+  background: #e83b34;
+}
+.productfull .jshop_product .c_product .buttons .add-wishlist .btwishlist:hover {
+  background: #444;
+}
+.productfull .jshop_product .c_product .buttons .add-wishlist:hover {
+  background: #444;
+}
+.productfull .jshop_product .c_product .buttons .add-wishlist:hover .fa.fa-heart {
+  background: #515151;
+}
+.productfull .jshop_product .c_product .buttons .add-wishlist:hover .btwishlist {
+  background: #444;
+}
+.rtl .jshop #checkout .td_1 {
+  text-align: right;
+}
+.rtl .jshop #checkout .td_2 {
+  text-align: left;
+}
+.rtl .jshop .jshop_list_product form {
+  width: 100%;
+  float: right;
+  margin-bottom: 27px;
+}
+.rtl .jshop .jshop_list_product form .block_sorting_count_to_page {
+  display: block;
+  width: 100%;
+  float: right;
+}
+.rtl .jshop .jshop_list_product form .box_products_sorting {
+  float: left;
+}
+.rtl .sj-categories .cat-wrap.theme2 .content-box .parent-cat {
+  float: right;
+}
+.rtl blockquote {
+  border-right: 0;
+}
+.rtl #g-about .customersay .yt-extra-carousel .carousel-control.right {
+  left: 10px !important;
+  right: auto !important;
+}
+.rtl #g-about .customersay .yt-extra-carousel .carousel-control.left {
+  left: 45px !important;
+  right: auto !important;
+}
+.rtl #g-about .customersay .cus-title {
+  right: 30px;
+  top: -21px;
+  left: auto;
+}
+.rtl .dl-horizontal dt {
+  text-align: right !important;
+}
+.rtl .jcatemega .mega-module-content .jshop_menu_level_0 {
+  background: url(../images/icon/bglim.png) right no-repeat;
+}
+.rtl #yt_mainmenu #meganavigator .level1.havechild.shop .mega-content {
+  left: -157px !important;
+}
+.rtl pre {
+  border-left: 0;
+  border-right: 3px solid #e83b34;
+  direction: rtl;
+}
+.rtl .jshop .cart .product_name {
+  text-align: right;
+}
+.rtl .jshop_subtotal .value {
+  text-align: left;
+}
+.rtl .jshop_subtotal .name {
+  padding-right: 0;
+}
+.rtl .mod-languages a.dropdown-toggle {
+  padding: 2px 11px;
+}
+.rtl .mod-languages a.dropdown-toggle img {
+  margin-left: 5px;
+  margin-right: 0;
+}
+.rtl #top1 .mod-languages ul.dropdown-menu li a {
+  padding: 7px 11px;
+}
+.rtl .container-slider .slider .vpo-wrap .vp .item .item-wrap .item-info .item-inner {
+  text-align: right;
+}
+.rtl .container-slider .slider .vpo-wrap .vp .item .item-wrap .item-info .item-review {
+  text-align: right;
+  width: 100%;
+}
+.rtl .sjshopcate_slide .categoryslider-content .icon-cate {
+  right: 0;
+}
+.rtl .menu-top-mobile li ul {
+  left: -3px;
+}
+.rtl .productfull #tabs-pro #tabs_container .tab-item .tab-item-inner .pro-review .review_mark .stars_no_active {
+  direction: ltr;
+}
+.rtl .related_pro .jshop_list_product tr td .product .content_product .review_mark .stars_no_active,
+.rtl .jshop_list_product .list_product .block_product .product .content_product .review_mark .stars_no_active {
+  direction: ltr;
+}
+.rtl .jshop_list_product .block_sorting_count_to_page .box_products_count_to_page .wrap-inputbox select,
+.rtl .jshop_list_product .block_sorting_count_to_page .box_products_sorting .wrap-inputbox select {
+  padding-right: 10px;
+  padding-left: 0;
+}
+.rtl .productfull .jshop_product .c_product .jshop_prod_attributes .clist .slist {
+  direction: ltr;
+}
+.rtl .jmycart {
+  float: left;
+}
+.rtl .yt-loginform {
+  float: left;
+}
+.rtl .menu-top li a {
+  padding: 5px;
+}

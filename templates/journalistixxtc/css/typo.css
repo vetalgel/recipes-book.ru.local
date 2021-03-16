@@ -1,0 +1,302 @@
+/* TYPO */
+body {
+	font-family:<?php echo $params->body_fontFamily; ?>;
+	font-size:<?php echo $params->body_fontSize; ?>px;
+	direction:<?php echo $params->direction; ?>;
+}
+
+/*Content and Component Headings */
+.contentheading,div.itemListCategory h2,.component h3,.content h3 {
+	font-family:<?php echo $params->conHead_fontFamily; ?>;
+	font-size:<?php echo $params->conHead_fontSize; ?>px;
+	line-height: 100%;
+	margin: 8px 15px 0px 0;
+	padding: 5px 0px 5px 0;
+	width: 99%;
+	font-weight: normal;
+}
+.componentheading {
+	font-family: <?php echo $params->comHead_fontFamily; ?>;
+	font-size:<?php echo $params->comHead_fontSize; ?>px;
+	line-height:<?php echo $params->comHead_fontSize; ?>px;
+}
+.component h2 {
+	letter-spacing:-2px;
+}
+
+.module h3 span{
+	font-size:<?php echo $params->modHead_fontSize; ?>px;
+	font-weight:bold;
+}
+.componentheading {
+	line-height: 100%;
+	margin: 8px 0px 8px 6px;
+	padding: 5px 0px 15px 0px;
+	width:98%;
+	font-weight: normal;
+	border-bottom:1px solid #ccc;
+}
+/* ----------------------------------------------*/
+
+/* TYPOGRAPHY
+/* ----------------------------------------------*/
+div.joomla p {
+    margin: 10px 0 15px;
+}
+div.joomla pre, 
+div.joomla blockquote,
+div.joomla ul, 
+div.joomla ol, 
+div.joomla h1, 
+div.joomla h2, 
+div.joomla h3, 
+div.joomla h4, 
+div.joomla h5, 
+div.joomla h6 {
+    margin: 1em 0;
+    padding: 0;
+}
+/*.component h1 {display:inline-block;font-size:4.25em;color: #999;line-height: 42px;}
+.component h2 { font-size: 2em; color: #999; line-height: 32px;}
+.component h3 { font-size: 1.55em;color: #999; line-height: 24px; }
+.component h4 { font-size: 1.15em; line-height: 1.25; font-weight: bold;color: #999; line-height: 18px; }
+.component h5 { font-size: 1em; font-weight: bold;color: #999; line-height: 16px;}
+.component h6 { font-size: 1em;color: #999; line-height: 16px;}*/
+
+h1 {font-size:<?php echo $params->h1; ?>px; letter-spacing: -2px; line-height:100%; padding:0; }
+h2 { font-size:<?php echo $params->h2; ?>px; letter-spacing: -1px; line-height:100%; font-weight:normal;}
+h3 { font-size:<?php echo $params->h3; ?>px;}
+h4 { font-size:<?php echo $params->h4; ?>px;}
+h5 { font-size:<?php echo $params->h5; ?>px;}
+h6 { font-size:<?php echo $params->h6; ?>px;}
+
+p{
+	line-height:130%;
+}
+
+.dropcap {float:left;padding:4px 8px 0 0;display:block;color:#999;font:50px/40px Times, serif;}
+
+/* Quotes */
+quotes {padding: 1em 40px 1em 15px;font: 16px Arial;color:#777;}
+blockquote.opensmall {background: url(<?php echo $imgpath; ?>/typo/openquote.gif) no-repeat 0 0;border:none;padding: 0 0 0 6px;text-align:justify;}
+blockquote.opensmall p {background: url(<?php echo $imgpath; ?>/typo/closequote.gif) no-repeat 100% 100%;padding: 0 0 0 15px;font: 16px Arial;color:#777;}
+/* Large Quotes */
+blockquote.openlarge {background: url(<?php echo $imgpath; ?>/typo/oquote_lg.png) no-repeat 0 0;border:none;padding:0 25px 0 0;text-align:justify;}
+blockquote.openlarge p {background: url(<?php echo $imgpath; ?>/typo/equote_lg.png) no-repeat 100% 100%;padding: 10px 50px 10px 50px;font: 28px Arial;line-height: 28px;color:#777;}
+
+/* Code */
+.code {background: #F4F4F4;font: 1em/1.5 "Tahoma", monospace;	margin: 5px 0 15px;	padding: 10px 15px;	color: #333333;}
+/* Error */
+p.error {padding-left: 25px;color: #f10033;	background: url('<?php echo $imgpath; ?>/typo/error.gif') no-repeat top left;}
+/* Message */
+p.message {color: #006699;background: url('<?php echo $imgpath; ?>/typo/info.gif') no-repeat top left;; padding-left:25px; padding-right:0px; padding-top:0px; padding-bottom:5px;}
+/* Ideas */
+p.ideas {padding-left: 25px;color: #EE9600;	background: url('<?php echo $imgpath; ?>/typo/lightbulb.gif') no-repeat top left;}
+/* Highlight */
+.highlight {padding: 12px;background: #FFFFCC;color: #333333;}
+/* Download */
+p.download {background: url('<?php echo $imgpath; ?>/typo/download.gif') no-repeat 5px center;	padding-left:35px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+/* Astrix */
+p.astrix {background: url('<?php echo $imgpath; ?>/typo/icon-asterisk_sm.png') no-repeat 5px center;	padding-left:25px; padding-right:0px; padding-top:0px; padding-bottom:5px;}
+/* Com */
+p.com {	background: url('<?php echo $imgpath; ?>/typo/ext_com.png') no-repeat 5px center;	padding-left:35px; padding-right:0px; padding-top:0px; padding-bottom:5px;}
+/* Mod */
+p.mod {	background: url('<?php echo $imgpath; ?>/typo/ext_mod.png') no-repeat 5px center;	padding-left:35px; padding-right:0px; padding-top:0px; padding-bottom:5px;}
+/* Plug */
+p.plug {background: url('<?php echo $imgpath; ?>/typo/ext_plugin.png') no-repeat 5px center;padding-left:35px; padding-right:0px; padding-top:0px; padding-bottom:5px;}
+/* Lang */
+p.lang {background: url('<?php echo $imgpath; ?>/typo/ext_lang.png') no-repeat 5px center;	padding-left:35px; padding-right:0px; padding-top:0px; padding-bottom:5px;}
+/* Photolink */
+p.photolink {background: url('<?php echo $imgpath; ?>/typo/ww_image.png') no-repeat 5px center;	padding-left:40px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+/* heart */
+p.heart {background: url('<?php echo $imgpath; ?>/typo/heart.png') no-repeat 5px center;padding-left:25px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+/* Star */
+p.stargrey {background: url('<?php echo $imgpath; ?>/typo/star-grey.png') no-repeat 5px center;padding-left:25px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+p.starred {background: url('<?php echo $imgpath; ?>/typo/star-red.png') no-repeat 5px center;padding-left:25px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+p.starblue {background: url('<?php echo $imgpath; ?>/typo/star-blue.png') no-repeat 5px center;padding-left:25px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+p.stargreen {background: url('<?php echo $imgpath; ?>/typo/star-green.png') no-repeat 5px center;padding-left:25px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+p.starorange {background: url('<?php echo $imgpath; ?>/typo/star-orange.png') no-repeat 5px center;padding-left:25px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+p.starbrick {background: url('<?php echo $imgpath; ?>/typo/star-brick.png') no-repeat 5px center;padding-left:25px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+p.starorange {background: url('<?php echo $imgpath; ?>/typo/star-orange.png') no-repeat 5px center;padding-left:25px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+/* Photo */
+p.photogrey {background: url('<?php echo $imgpath; ?>/typo/camera-grey.png') no-repeat 5px center;	padding-left:40px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+p.photoblack {background: url('<?php echo $imgpath; ?>/typo/camera-black.png') no-repeat 5px center;padding-left:40px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+p.photored {background: url('<?php echo $imgpath; ?>/typo/camera-red.png') no-repeat 5px center;padding-left:40px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+p.photoblue {background: url('<?php echo $imgpath; ?>/typo/camera-blue.png') no-repeat 5px center;	padding-left:40px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+p.photopink {background: url('<?php echo $imgpath; ?>/typo/camera-pink.png') no-repeat 5px center;	padding-left:40px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+p.photogreen {background: url('<?php echo $imgpath; ?>/typo/camera-green.png') no-repeat 5px center;padding-left:40px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+p.photobrick {background: url('<?php echo $imgpath; ?>/typo/camera-brick.png') no-repeat 5px center;padding-left:40px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+p.photoorange {background: url('<?php echo $imgpath; ?>/typo/camera-orange.png') no-repeat 5px center;padding-left:40px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+/* X */
+p.x {background: url('<?php echo $imgpath; ?>/typo/x-red.png') no-repeat 5px center;padding-left:25px; padding-right:0px; padding-top:5px; padding-bottom:5px;}
+p.xblack {background: url('<?php echo $imgpath; ?>/typo/x-black.png') no-repeat 5px center;padding-left:25px; padding-right:0px; padding-top:5px; padding-bottom:5px;}
+/* RSS */
+p.rss {background: url('<?php echo $imgpath; ?>/typo/rss.png') no-repeat 5px center;padding-left:25px; padding-right:0px; padding-top:0px; padding-bottom:0px;}
+/* Check list */
+ul.checklist {list-style: none;}
+ul.checklist li {background: url('<?php echo $imgpath; ?>/typo/check-grey.png') no-repeat 0 0;margin-left: 15px;	padding: 0 0 15px 30px;}
+/* Article list */
+ul.articlelist {list-style: none;}
+ul.articlelist li {background: url('<?php echo $imgpath; ?>/typo/article-grey.png') no-repeat 0 3px; margin-left: 15px;padding: 0 0 5px 30px;}
+/* Star list */
+ul.starlist {list-style: none;}
+ul.starlist li {background: url('<?php echo $imgpath; ?>/typo/star-grey.png') no-repeat 0 3px;margin-left: 15px;padding: 0 0 5px 30px;}
+/* Arrow list */
+ul.arrowlist {list-style: none;}
+ul.arrowlist li {background: url('<?php echo $imgpath; ?>/typo/next-grey.png') no-repeat 0 3px;margin-left: 15px;	padding: 0 0 5px 30px;}
+/* X list */
+ul.xlist {list-style: none;}
+ul.xlist li {margin-left: 15px;	background: url('<?php echo $imgpath; ?>/typo/x-red.png') no-repeat 0 3px;; padding: 0 0 5px 30px;}
+/* ast list */
+ul.astlist {list-style: none;}
+ul.astlist li {	margin-left: 15px;	background: url('<?php echo $imgpath; ?>/typo/icon-asterisk_sm.png') no-repeat 0 3px;; padding: 0 0 5px 30px;}
+/* Movie List */
+ul.movielist {list-style: none;}
+ul.movielist li {margin-left: 15px; background: url('<?php echo $imgpath; ?>/typo/movie-grey.png') no-repeat 0 3px;padding: 0 0 5px 30px;}
+/* Blog List */
+ul.bloglist {list-style: none;}
+ul.bloglist li {margin-left: 15px; background: url('<?php echo $imgpath; ?>/typo/blog-green.png') no-repeat 0 3px;	padding: 0px 0px 5px 30px;}
+/* Photo List */
+ul.photolist {list-style: none;}
+ul.photolist li {margin-left: 15px; background: url('<?php echo $imgpath; ?>/typo/camera-grey.png') no-repeat 0 3px;	padding: 0 0 0px 30px;}
+/* Date List */
+ul.datelist {list-style: none;}
+ul.datelist li {background: url('<?php echo $imgpath; ?>/typo/calendar-grey.png') no-repeat 0 3px;margin-left: 15px;	padding: 0 0 5px 30px;}
+/* Pink Blog Bubble */
+.pinkbubble {background: url('<?php echo $imgpath; ?>/typo/pinkblog_bottom.gif') no-repeat left bottom;font-size: 2em;	color: #FFFFFF !important;	padding-left:20px; padding-right:20px; padding-top:20px; padding-bottom:50px;}
+/* Blue Blog Bubble */
+.bluebubble {background: url('<?php echo $imgpath; ?>/typo/blueblog_bottom.gif') no-repeat left bottom;font-size: 2em;color: #FFFFFF !important;	padding-left:20px; padding-right:20px; padding-top:20px; padding-bottom:50px;}
+/* Red Blog Bubble */
+.redbubble {	background: url('<?php echo $imgpath; ?>/typo/redblog_bottom.gif') no-repeat left bottom;	font-size: 2em;	color: #FFFFFF !important;	padding-left:20px; padding-right:20px; padding-top:20px; padding-bottom:50px;}
+/* Green Blog Bubble */
+.greenbubble {	background: url('<?php echo $imgpath; ?>/typo/greenblog_bottom.gif') no-repeat left bottom;font-size: 2em;color: #FFFFFF !important;padding-left:20px; padding-right:20px; padding-top:20px; padding-bottom:50px;}
+/* Yellow Blog Bubble */
+.yellowbubble {background: url('<?php echo $imgpath; ?>/typo/yellowblog_bottom.gif') no-repeat left bottom;font-size: 2em;color: #333 !important;padding-left:20px; padding-right:20px; padding-top:20px; padding-bottom:50px;}
+/* brick Blog Bubble */
+.brickbubble {background: url('<?php echo $imgpath; ?>/typo/pinkblog_bottom.gif') no-repeat left bottom;font-size: 2em;color: #FFFFFF !important;	padding-left:20px; padding-right:20px; padding-top:20px; padding-bottom:50px;}
+/* Orange Blog Bubble */
+.orangebubble {	background: url('<?php echo $imgpath; ?>/typo/orangeblog_bottom.gif') no-repeat left bottom;font-size: 2em;color: #FFFFFF !important;	padding-left:20px; padding-right:20px; padding-top:20px; padding-bottom:50px;}
+/* Grey Blog Bubble */
+.greybubble {background: url('<?php echo $imgpath; ?>/typo/greyblog_bottom.gif') no-repeat left bottom;font-size: 2em;color: #FFFFFF !important;padding-left:20px; padding-right:20px; padding-top:20px; padding-bottom:50px;}
+/* Black Blog Bubble */
+.blackbubble {background: url('<?php echo $imgpath; ?>/typo/blackblog_bottom.gif') no-repeat left bottom;font-size: 2em;color: #FFFFFF !important;padding-left:20px; padding-right:20px;padding-top:20px; padding-bottom:50px;}
+/* Note */
+.note {	background: url('<?php echo $imgpath; ?>/typo/note.gif') no-repeat right bottom;font-size: 1em;color: #000000 !important;	padding-left:20px; padding-right:20px; padding-top:40px; padding-bottom:40px;}
+.grayhover1{padding: 12px;}
+td {
+    font-size:100%;
+}
+th {
+
+    font-weight:bold;
+    text-align:left;
+}
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	_vertical-align: bottom;
+	position: relative;
+	font-size:80%;
+	color:#F06;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+del {
+    text-decoration: line-through;
+}
+span{
+   
+}
+small {
+	font-size: 8px;
+}
+
+pre{
+    border-left:3px solid #999999;
+    font:1em/1.5 "Courier News",monospace;
+    margin:5px 0 15px;
+    padding:10px 15px;
+	background:#efefef;
+}
+ol { 
+    list-style-type: upper-roman; 
+}
+hr {
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px 0 0;
+    clear: both;
+}
+fieldset{ 
+    border:0px solid #999;
+}
+
+legend {
+    padding: 0.2em 0.5em;
+    border:0px solid #333;
+    color:#aaa;
+    font-size:90%;
+    text-align:right;
+ }
+abbr[title] {
+    border-bottom:1px dashed #999;
+    cursor:help;
+}
+/*acronym {
+    background-color:#FFFFDD;
+    border:0.08em solid #AAAAAA;
+    padding:0 3px;
+    text-decoration:none;
+}*/
+big{
+	font-size:150%;
+}
+button{
+	border:none;
+	padding:4px;
+	font-size:12px;
+	color:#fff;
+	background:#ccc;
+}
+center{
+	text-align: center;
+}
+em{
+	font-style:normal;
+}
+/* UL LI's */
+ul {
+    list-style-image:none;
+}
+ul li {
+    background: url(<?php echo $imgpath; ?>/bullet.gif) no-repeat 18px 8px;
+    line-height: 180%;
+    padding-left: 30px;
+}
+ol {
+	margin-left:25px;
+}
+ol li {
+    list-style-type:decimal;
+	background:none;
+	margin:0 0 0 30px;
+	padding:0;
+}
+a{
+	font-size:<?php echo $params->linkSize; ?>;
+	font-family:<?php $params->linkFont; ?>;
+}
+a{
+	text-decoration:<?php echo $params->linkdecoration; ?>;
+}
+a:hover{
+	text-decoration:<?php echo $params->linkdecorationhover; ?>;
+}

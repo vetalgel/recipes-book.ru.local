@@ -1,0 +1,9 @@
+/** * ------------------------------------------------------------------------
+ * JA Portfolio Template for Joomla 2.5
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------ */ #ja-typo, div.article-tools { margin:0 }#ja-typo { padding:0 10px }ul.ja-typo-list li { padding:0 25px 0 0 }ul.list-check li { background:none } /* Normal links ---*/a { color: #5F9729; text-decoration: none; }a:hover, a:active, a:focus { text-decoration: underline; color: #525253; }ul li { background:none; margin:0; padding:0; overflow:visible }/* Readon links ---*/p.readmore a {	background: url(../images/check_alt_12x12.png) no-repeat 5px 5px;	border: 1px solid transparent;	color: #525253;	display: block;	float: right;	font-size: 92%;	text-transform: uppercase;	padding: 3px 5px 3px 22px;}p.readmore a:hover,p.readmore a:focus,p.readmore a:active {	background-color: #f0f0f0;	border-color: #dedede;	color: #525253;	text-decoration: none;}/* Headings ---*/.contentheading, .componentheading, h1, h2, h3, h4, h5 {	font-family: Arial, Helvetica, sans-serif;}.article-content .img-border {	margin: 0px 10px;} 

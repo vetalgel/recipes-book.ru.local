@@ -1,0 +1,29 @@
+#header{
+  position:relative;
+  z-index:10;
+}
+
+#icon1{
+  position:relative;
+  z-index:20;
+}
+
+#menu{
+  overflow:visible;
+}
+
+#menu ul.menu li {
+	background: url("<?php echo $xtc->templateUrl; ?>images/menus/menu_hover.png") !important;
+}
+
+.col_default h3.modtitle span {
+	line-height:24px;
+}
+
+div#eventlist .catimg {
+  margin:8px 12px 30px 0;
+}
+
+.content_vote{
+  margin-top:-3px;
+}

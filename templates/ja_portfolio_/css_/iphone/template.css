@@ -1,0 +1,132 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA Portfolio Template for Joomla 2.5
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+ */ 
+
+
+/* COMMON STYLE
+--------------------------------------------------------- */
+body.bd-iphone .img-border {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+p.readmore a {
+	font-size: 90%;
+}
+
+h1.logo {
+	width: 294px;	
+	height: 68px;
+}
+
+h1.logo a {
+	background: url(../../images/logo.png) no-repeat left;
+	display: block;
+	width: 294px;	
+	height: 68px;
+}
+
+body.bd-iphone #form-login-username .inputbox, 
+body.bd-iphone #form-login-password .inputbox {
+	width: 140px;
+	border: 1px solid #CACCCE;
+	background: url("../../images/grad-l1.gif") repeat-x scroll center bottom #FFFFFF;
+}
+
+body.com_content #ja-content-main { padding: 20px 9px  0px 9px; }
+
+#ja-login p#form-login-username strong, #ja-login p#form-login-password strong, 
+#ja-login p#form-login-submit strong{
+	font-size: 90%;
+	text-transform: none;
+	width: 90px;
+}
+
+#ja-login p#form-login-submit input.button { font-size: 90%; }
+ 
+body.com_content #ja-container .article_column {
+	background-color: #fff;
+	border: solid 1px #878787;
+	display: block;
+	margin: 3px 9px 17px;
+	overflow: hidden;
+	-webkit-border-radius: 8px;
+}
+
+body.com_content #ja-container .contentpaneopen {
+	padding: 9px;
+}
+
+body.com_content .category-list  {
+	background-color: #fff;
+	border: solid 1px #878787;
+	display: block;
+	margin: 3px 9px 17px;
+	overflow: hidden;
+	-webkit-border-radius: 8px;
+	padding: 9px;
+}
+
+#jashowcase-main .jasc-header { z-index:1 !important }
+
+div.ja-showcase.module div, div.ja-showcase.module div div {z-index:auto !important}
+
+.ja-showcase-thumb img { position:static !important }
+
+#jashowcase-main .ja-showcase-row .ja-showcase h3  { overflow:hidden }
+
+#jashowcase-main .jasc-btn-control ul li { margin-left:2px; margin-right:2px }
+
+/* about
+----------------------------------*/
+.category-list dl dt {
+    display: inline;
+    float: left;
+    margin-right: 3px;
+}
+
+/* new feed
+----------------------------------*/
+.category { width:100%; margin-bottom:10px; }
+
+.category td, .category th { padding:5px; vertical-align:top; word-wrap: break-word; font-size:86%; text-align:left }
+
+.filters { font-size: 86%; }
+
+.filters legend { float:left }
+
+.ja-showcase-img { width:99% !important }
+
+.ja-newsflash-items { width:100% !important; }
+
+#iContent{ height:300px !important }
+
+body.bd-iphone #ja-popup #ja-popup-header-wrap, body.bd-iphone #ja-popup #ja-popup-content-wrap, body.bd-iphone #ja-popup #ja-popup-footer-wrap { width:320px !important }
+
+.ja-content-main .counter {
+	width: auto;
+	right: 10px;
+}
+
+/* contact form */
+.contact-form dt { display: block; }
+.contact-form dd .button { float: right; margin-right: 10%; }
+
+.contact-links ul { list-style: inside disc; }
+
+#jashowcase-main .jasc-header {
+	-webkit-border-radius: 8px 8px 0 0;
+	margin: 0 10px;
+}
+
+.pagination, .pagenav { border: none; }
+
+#jac-wrapper .type_captcha input.text { padding: 1px 1px 0; }

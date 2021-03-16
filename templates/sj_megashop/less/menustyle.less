@@ -1,0 +1,442 @@
+/*******************************************
+***          YT Framework: less          ***
+*******************************************/
+
+// --* Menu Style Templates  *----------------------
+// -----------------------------------------------
+/*   1.LTR Language Menu Style
+ *      1.Moo menu
+ *      2.Dropline Menu
+ *      3.Mega Menu
+ *      4.Responsive Menu
+ *
+ *   2.RTL Language Menu Style
+ *      1.Moo menu & Css Menu
+ *      2.Dropline Menu
+ *      3.Mega Menu
+ *      4.Responsive Menu
+ *
+ */
+
+
+// 1. LTR Menu Style
+// --------------------------------------------------
+#yt_mainmenu{
+
+    // 1.1 Moo menu
+    // -------------------------
+
+     // Fancy Menu
+    .fancy {border-top:@linkColor 3px solid !important;position: absolute;padding: 0;margin: 0;}
+
+    #moonavigator {margin: 0 ;padding: 0;list-style: none;position: relative;z-index: 2;list-style: none;
+
+        li.level1 {float: left;position: relative;padding: 0;margin: 0;z-index: 1;list-style: none;
+            > .item-link  {margin: 0 ;line-height: 56px;padding: 12px 10px; color:#444444;font-size:100%;display: block; font-weight: 700;
+		&:hover {color: @linkColor; }
+		&.active{background: none; color: @linkColor !important;}
+	    }
+	    &.havechild {
+		    &:hover {
+			> .item-link  { position: relative;
+			    &:after {top: 80%; left: 50%; border: solid transparent; content: ""; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(136, 183, 213, 0); border-bottom-color:@linkColor; border-width: 8px; margin-left: -8px;}
+			}
+		    }
+		}
+            // Child Menu Item
+           .fa-caret-down{font-size:14px;margin:0 5px; display: none;}
+
+            // Add description and show icons
+            .showdesc{
+                .menu-title{line-height: 100%;padding-bottom: 3px;margin-top: -1px;display: block;}
+                .menu-desc{display: block;font-size: 11px;color: #ccc;line-height: 100%;}
+            }
+
+            //Hover and Active (:hover of cssmenu, .hover of moomenu)
+            &.active{background: none; color: @linkColor !important;}
+
+            &.first {border: none;}
+            &.last {}
+
+        }
+
+        // Show All Submenu
+        ul.subnavi  {
+            left: 0;position: absolute;z-index: 3;padding:0 10px;list-style: none;width: 180px; visibility: hidden; margin-top: -1px;
+            .translate(0,20px);  .transition(transform 0.2s ease-in-out 0s); background: #fff; border-top:@linkColor 3px solid;
+            ul.subnavi{.translate(20px,0);}
+
+            li {padding: 0 0 1px 0;position: relative;
+                .item-link {display: block;margin: 0;padding: 6px 10px ;color: #444444;font-size: 90%;text-transform: none;line-height: 25px; border-bottom: #ddd 1px solid; background: url(../images/icon/bglim.png) left  no-repeat;
+		    &.last {border-bottom: none;}
+		}
+                .fa-caret-right{position: absolute;right: 10px; top: 12px; z-index: 1;margin: 4px 0; width: 4px; height: 7px; background: url(../images/icon/icon_caret_right.png) no-repeat; content: '';
+		    &:before {display: none;}
+		}
+
+                // Add description and show icons
+                .showdesc{text-align: left;
+                    span.menu-title{padding-bottom: 5px;}
+                    span.menu-desc{font-family: "arial";padding-bottom: 3px;}
+                }
+
+                // Hover and Active menu
+                &:hover,&.hover,&.active{
+                    > .item-link{color: @linkColor; background: url("@{base-url}/bglim.png") left  no-repeat;
+			.fa-caret-right {background: url("@{base-url}/icon_caret_right.png") left  no-repeat;}
+		    }
+                }
+
+            }
+        }
+
+        // Submenu level2 -> level5
+        li.level1:hover ul.level2,li.level1.hover ul.level2{
+            visibility: visible;box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4); .translate(0,0); .opacity(100);
+        }
+        li.level2:hover ul.level3,li.level2.hover ul.level3,
+        li.level3:hover ul.level4,li.level3.hover ul.level4,
+        li.level4:hover ul.level5,li.level4.hover ul.level5,
+        li.level5:hover ul.level6,li.level5.hover ul.level6{
+            left: 100%;top:0;visibility: visible;box-shadow:  2px 2px 1px rgba(0, 0, 0, 0.2), 1px 1px 0 rgba(0, 0, 0, 0.1) inset;.translate(0,0);.opacity(100);
+	    &:after {display: none;}
+        }
+
+
+
+    }
+
+    // 1.2 Dropline Menu
+    // ----------------------------------
+    #droplinenavigator{#moonavigator();
+        // li.level1{ li.level1();}
+         li.level1{position: static;
+            &.havechild:after{display: none;}
+            >.item-link{padding:  12px 10px;}
+         }
+          ul.level2{margin: 0;width: 100%;padding: 5px;
+               li.level2{float: left;border: none;
+		    .item-link {border-bottom: none; .fa-caret-right {display: none;}}
+                   .level2 {
+                       &.havechild:after{content: "";display: none;}
+                   }
+                   &:hover{position: relative;
+                       ul.level3{left: 0;top: 100%;
+			    .item-link {border-bottom:#ddd 1px solid; .fa-caret-right {display:block;}}
+		       }
+                   }
+               }
+          }
+    }
+
+    // 1.3 Mega Menu
+    // ----------------------------------
+    #meganavigator{list-style: none;padding: 0;margin: 0;position: relative;z-index: 60;
+        li.level1{#moonavigator li.level1();}
+
+        li.full_megachild{position: static;
+            // Child Menu Item
+            .mega-content{left: 0 !important; width: 100%;}
+            .mega-content-inner{width: 1170px !important; margin: 0 auto;}
+        }
+
+        .mega-content{position: absolute;left: -999em;z-index: 10; background: #fff; box-shadow:  2px 2px 1px rgba(0, 0, 0, 0.2), 1px 1px 0 rgba(0, 0, 0, 0.1) inset; border-top:@linkColor 3px solid;
+                .mega-content{box-shadow:  2px 2px 1px rgba(0, 0, 0, 0.2), 1px 1px 0 rgba(0, 0, 0, 0.1) inset;}
+
+                //Mega Child
+                &.megachild .mega-content-inner {padding: 10px;display: block;}
+
+                //Mega Colums
+                .mega-col {float: left;
+                    &.one{width: 200px;}
+                    &.more{padding: 0;
+			.mega-group-content {
+			    ul.subnavi {
+				li {
+				    .item-link, a {line-height: normal; padding: 5px 10px; border-bottom: none;}
+				}
+			    }
+			}
+		    }
+
+                    //Mega Group
+                    .mega-group  {display: block;
+			div.mega-group-content {
+			    .mega-content {
+				&:after {display: none;}
+			    }
+			}
+                        div.mega-group-title{
+                            .item-link{font-size: 120%;padding: 10px 10px 5px;display: block; font-weight: 700;
+				.fa-caret-right {display: none;}
+			    }
+                            .showdesc .menu-title{padding: 0 0 5px;}
+                        }
+                    }
+                    .mega-module{color: #ddd;
+                        .mega-module-title{margin: 0 10px;}
+                    }
+                }
+
+                ul.subnavi,.menu {list-style: none;padding:0 10px;
+                    li{#moonavigator ul.subnavi li();}
+                }
+
+
+
+          }
+
+
+
+     }
+
+    // 1.4 Responsive Menu
+    // ----------------------------------
+    .yt-resmenu{
+        a{padding:0px 15px; height: 36px;background: @background1;line-height: 54px;display: inline-block;
+            .fa{margin: 0 ; font-size: 28px; color: @white;}
+        }
+
+     }
+
+
+}
+
+// Sidebar  menu
+.mm-list > li:hover{
+    a,span{background: @background1;color: @white;}
+}
+.yt-off-resmenu{position: absolute;top: 0; z-index: 2; width: 300px; left:0px;height: 100%;overflow: auto;
+    .top-resmenu{padding:10px 25px; background: @background1;font-size: 20px; color: @white; margin: 0;font-weight: normal;cursor: pointer;
+        .fa-bars{font-size: 28px; }
+
+        .fa-times{margin: 5px 0 0;color: @white;font-size: 16px;}
+    }
+
+    > ul.resmenu{margin: 1em 1.5em ;font-size: 16px;
+          > li{padding-bottom: 15px;}
+          a{color: #ddd;padding: 5px 0;display: block;
+              &:focus,&:hover,&.active {color: @linkColor;}
+          }
+         //Menu level2
+          ul.nav{font-size: 14px;font-weight: normal;
+               a{padding:  1px 0;background: transparent;}
+               //ul.nav{text-indent: 15px;}
+          }
+
+     }
+}
+
+
+
+
+// 2. RTL Menu Style
+// --------------------------------------------------
+.rtl{
+    #yt_mainmenu{
+
+    // 1.1 Moo menu
+    // -------------------------
+
+     // Fancy Menu
+    .fancy {border-top:@linkColor 3px solid !important;position: absolute;padding: 0;margin: 0;}
+
+    #moonavigator {margin: 0 ;padding: 0;list-style: none;position: relative;z-index: 2;list-style: none;
+
+        li.level1 {float: right !important;position: relative;padding: 0;margin: 0;z-index: 1;list-style: none;
+            > .item-link  {margin: 0 ;line-height: 56px;padding: 12px 10px; color:#444444;font-size:100%;display: block;  font-weight: 700;
+		&:hover {color: @linkColor; }
+		&.active{background: none; color: @linkColor !important;}
+	    }
+	    &.havechild {
+		    &:hover {
+			> .item-link  { position: relative;
+			    &:after {top: 80%; left: 50%; border: solid transparent; content: ""; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(136, 183, 213, 0); border-bottom-color:@linkColor; border-width: 8px; margin-left: -8px;}
+			}
+		    }
+		}
+            // Child Menu Item
+           .fa-caret-down{font-size:14px;margin:0 5px; display: none;}
+
+            // Add description and show icons
+            .showdesc{
+                .menu-title{line-height: 100%;padding-bottom: 3px;margin-top: -1px;display: block;}
+                .menu-desc{display: block;font-size: 11px;color: #ccc;line-height: 100%;}
+            }
+
+            //Hover and Active (:hover of cssmenu, .hover of moomenu)
+            &.active{background: none; color: @linkColor !important;}
+
+            &.first {border: none;}
+            &.last {}
+
+        }
+
+        // Show All Submenu
+        ul.subnavi  {
+            left: 0;position: absolute;z-index: 3;padding:0 10px;list-style: none;width: 180px; visibility: hidden; margin-top: -1px;
+            .translate(0,20px);  .transition(transform 0.2s ease-in-out 0s); background: #fff; border-top:@linkColor 3px solid;
+            ul.subnavi{.translate(20px,0);}
+
+            li {padding: 0 0 1px 0;position: relative;
+                .item-link {display: block;margin: 0;padding: 6px 10px ;color: #444444;font-size: 90%;text-transform: none;line-height: 25px; border-bottom: #ddd 1px solid; background: url(../images/icon/bglim.png) right  no-repeat;
+		    &.last {border-bottom: none;}
+		}
+                .fa-caret-right{position: absolute;left: 10px; right: auto; top: 12px; z-index: 1;margin: 4px 0; width: 4px; height: 7px; background: url(../images/icon/icon_caret_left.png) no-repeat; content: '';
+		    &:before {display: none;}
+		}
+
+                // Add description and show icons
+                .showdesc{text-align: left;
+                    span.menu-title{padding-bottom: 5px;}
+                    span.menu-desc{font-family: "arial";padding-bottom: 3px;}
+                }
+
+                // Hover and Active menu
+                &:hover,&.hover,&.active{
+                    > .item-link{color: @linkColor; background: url("@{base-url}/bglim.png") right  no-repeat;
+			.fa-caret-right {background: url("@{base-url}/icon_caret_left.png") left  no-repeat;}
+		    }
+                }
+
+            }
+        }
+
+        // Submenu level2 -> level5
+        li.level1:hover ul.level2,li.level1.hover ul.level2{
+            visibility: visible;box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4); .translate(0,0); .opacity(100);
+        }
+        li.level2:hover ul.level3,li.level2.hover ul.level3,
+        li.level3:hover ul.level4,li.level3.hover ul.level4,
+        li.level4:hover ul.level5,li.level4.hover ul.level5,
+        li.level5:hover ul.level6,li.level5.hover ul.level6{
+            left: 100%;top:0;visibility: visible;box-shadow:  2px 2px 1px rgba(0, 0, 0, 0.2), 1px 1px 0 rgba(0, 0, 0, 0.1) inset;.translate(0,0);.opacity(100);
+	    &:after {display: none;}
+        }
+
+
+
+    }
+
+    // 1.2 Dropline Menu
+    // ----------------------------------
+    #droplinenavigator{#moonavigator();
+        // li.level1{ li.level1();}
+         li.level1{position: static;
+            &.havechild:after{display: none;}
+            >.item-link{padding:  12px 10px;}
+         }
+          ul.level2{margin: 0;width: 100%;padding: 5px;
+               li.level2{float: right !important;border: none;
+		    .item-link {border-bottom: none; .fa-caret-right {display: none;}}
+                   .level2 {
+                       &.havechild:after{content: "";display: none;}
+                   }
+                   &:hover{position: relative;
+                       ul.level3{left: 0;top: 100%;
+			    .item-link {border-bottom:#ddd 1px solid; .fa-caret-right {display:block;}}
+		       }
+                   }
+               }
+          }
+    }
+
+    // 1.3 Mega Menu
+    // ----------------------------------
+    #meganavigator{list-style: none;padding: 0;margin: 0;position: relative;z-index: 60;
+        li.level1{#moonavigator li.level1();}
+
+        li.full_megachild{position: static;
+            // Child Menu Item
+            .mega-content{left: 0 !important; width: 100%;}
+            .mega-content-inner{width: 1170px !important; margin: 0 auto;}
+        }
+
+        .mega-content{position: absolute;left: -999em;z-index: 10; background: #fff; box-shadow:  2px 2px 1px rgba(0, 0, 0, 0.2), 1px 1px 0 rgba(0, 0, 0, 0.1) inset; border-top:@linkColor 3px solid;
+                .mega-content{box-shadow:  2px 2px 1px rgba(0, 0, 0, 0.2), 1px 1px 0 rgba(0, 0, 0, 0.1) inset;}
+
+                //Mega Child
+                &.megachild .mega-content-inner {padding: 10px;display: block;}
+
+                //Mega Colums
+                .mega-col { float: right;
+                    &.one{width: 200px;}
+                    &.more{padding: 0;
+			.mega-group-content {
+			    ul.subnavi {
+				li {
+				    .item-link, a {line-height: normal; padding: 5px 10px; border-bottom: none;}
+				}
+			    }
+			}
+		    }
+
+                    //Mega Group
+                    .mega-group  {display: block;
+			div.mega-group-content {
+			    .mega-content {
+				&:after {display: none;}
+			    }
+			}
+                        div.mega-group-title{
+                            .item-link{font-size: 120%;padding: 10px 10px 5px;display: block; font-weight: 700;
+				.fa-caret-right {display: none;}
+			    }
+                            .showdesc .menu-title{padding: 0 0 5px;}
+                        }
+                    }
+                    .mega-module{color: #ddd;
+                        .mega-module-title{margin: 0 10px;}
+                    }
+                }
+
+                ul.subnavi,.menu {list-style: none;padding:0 10px;
+                    li{#moonavigator ul.subnavi li();}
+                }
+
+
+
+          }
+
+
+
+     }
+
+    // 1.4 Responsive Menu
+    // ----------------------------------
+    .yt-resmenu{
+        a{padding:0px 15px; height: 36px;background: @background1;line-height: 54px;display: inline-block;
+            .fa{margin: 0 ; font-size: 28px; color: @white;}
+        }
+
+     }
+
+
+}
+
+// Sidebar  menu
+.mm-list > li:hover{
+    a,span{background: @background1;color: @white;}
+}
+.yt-off-resmenu{position: absolute;top: 0; z-index: 2; width: 300px; left:0px;height: 100%;overflow: auto;
+    .top-resmenu{padding:10px 25px; background: @background1;font-size: 20px; color: @white; margin: 0;font-weight: normal;cursor: pointer;
+        .fa-bars{font-size: 28px; }
+
+        .fa-times{margin: 5px 0 0;color: @white;font-size: 16px;}
+    }
+
+    > ul.resmenu{margin: 1em 1.5em ;font-size: 16px;
+          > li{padding-bottom: 15px;}
+          a{color: #ddd;padding: 5px 0;display: block;
+              &:focus,&:hover,&.active {color: @linkColor;}
+          }
+         //Menu level2
+          ul.nav{font-size: 14px;font-weight: normal;
+               a{padding:  1px 0;background: transparent;}
+               //ul.nav{text-indent: 15px;}
+          }
+
+     }
+}
+
+}

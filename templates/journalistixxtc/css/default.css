@@ -1,0 +1,814 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;	padding: 0;	border: 0px none;}
+table { border-collapse: separate; border-spacing: 0px;}
+caption, th, td { text-align: left; font-weight: normal; border-collapse: collapse; }
+blockquote:before, blockquote:after, q:before, q:after {  }
+blockquote, q {  }
+ul {list-style:none;}
+li {list-style-type:none;list-style-image:url('none') no-repeat;}
+a{color: inherit; text-decoration:none; }
+td, div {
+	font-size: 100%;
+}
+
+/* YOOTHEME OVERRIDES CSS */
+
+/* Copyright (C) 2007 - 2009 YOOtheme GmbH */
+
+/*
+ * general
+ * used by Jommla core components
+ */
+ 
+div.joomla h1, div.joomla h2, div.joomla h3, div.joomla h4, div.joomla h5, div.joomla h6 {
+	line-height: 100%;
+}
+div.joomla h1 {
+	letter-spacing: -2px;
+}
+div.joomla h2, div.joomla h3, div.joomla h4, div.joomla h5 {
+	letter-spacing: -1px;
+}
+div.joomla p {margin-top:5px;}
+div.joomla h1.pagetitle {
+}
+div.joomla div.description {
+	margin: 10px 0px 10px 0px;
+	overflow: hidden;
+}
+div.joomla div.description img.left {
+	margin-right: 15px;
+	float: left;
+}
+div.joomla div.description img.right {
+	margin-left: 15px;
+	float: right;
+}
+div.joomla div.filter {
+	margin: 10px 0px 10px 0px;
+}
+div.joomla th {
+	padding: 5px 5px 5px 5px;
+	border-bottom: 1px solid #b4b4b4;
+	font-weight : bold;
+}
+div.joomla tr.even td {
+	padding: 5px 5px 5px 5px;
+	border-bottom: 1px solid #dcdcdc;
+}
+div.joomla tr.odd td {
+	padding: 5px 5px 5px 5px;
+	border-bottom: 1px solid #dcdcdc;
+}
+div.joomla span.number {
+	color: #969696;
+	font-style: italic;
+}
+/* floats */
+div.joomla .float-left {
+	float: left;
+	overflow: hidden;
+}
+div.joomla .float-right {
+	float: right;
+	overflow: hidden;
+}
+div.joomla .width25 {
+	width: 24.999%;
+}
+div.joomla .width33 {
+	width: 33.333%;
+}
+div.joomla .width50 {
+	width: 49.999%;
+}
+div.joomla .width100 {
+	width: 100%;
+}
+/*
+ * com_content
+ * blog layout (frontpage, category, section)
+ * sub selectors: blog
+ */
+div.itemHeader h2.itemTitle {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:36px;
+	font-weight:bold;
+	letter-spacing:-2px;
+	line-height:110%;
+	padding:0;
+	margin-bottom: 15px;
+}
+div.articleHeader h2.itemTitle {
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: 110%;
+    margin-bottom: 15px;
+    padding: 0;
+    font-size: 44px !important;
+    font-weight: 100 !important;
+    letter-spacing: -3px !important;
+    line-height: 110%;
+    margin-top: -5px;
+}
+div.joomla div.itemToolbar {
+	background:none repeat scroll 0 0 #ccc;
+	margin:-15px -24px 20px;
+	padding:2px 25px 8px 25px;
+	height:25px;
+}
+div.joomla div.itemToolbarpush {
+	background:none repeat scroll 0 0 #ccc;
+	margin:-15px -24px 0;
+	padding:2px 25px 8px 25px;
+	height:25px;
+}
+div.joomla div.itemToolbar2 {
+	background:none repeat scroll 0 0 #DADADA;
+	margin:0 -24px 24px;
+	padding:8px 25px 5px 25px;
+	height:20px;
+}
+div.joomla div.itemHeader {
+	background-color:#CCCCCC;
+	margin:-24px -24px 0;
+}
+div.joomla div.blog div.description {
+	margin: 10px 0px 15px 0px;
+	padding-bottom: 20px;
+	border-bottom: 1px #c8c8c8 dotted;
+}
+div.joomla div.leadingarticles {
+	overflow: hidden;
+}
+div.joomla div.teaserarticles {
+	overflow: hidden; margin-bottom: 20px; padding-bottom:20px; border-bottom:1px solid #cccccc;
+}
+div.joomla div.item {
+margin-bottom: 15px; 
+}
+div.joomla div.item-bg {
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+div.joomla div.multicolumns div.item {
+	margin-bottom: 20px; padding-bottom:20px;
+}
+div.joomla div.multicolumns div.first div.item {
+	margin-left: 0;
+	padding:0 20px 0 0;
+}
+div.joomla div.multicolumns div.last div.item {
+	margin-right: 0;
+	padding:0 0 0 20px;
+
+}
+div.joomla div.morearticles {
+	margin: 10px 0px 10px 0px;
+}
+div.joomla div.pagination {
+	text-align: center;
+}
+div.joomla div.pagination span {padding:6px 5px;}
+div.joomla div.pagination a {padding:6px 5px;}
+/*
+ * com_content
+ * list layout (frontpage, category, section)
+ * sub selectors: sectionlist, categorylist
+ */
+
+/*
+ * com_content
+ * article layout
+ * sub seletors: article
+ */
+
+div.joomla div.headline {
+	overflow: hidden;
+    padding:0 0 0px 0;
+}
+div.joomla h1.title {
+	width: auto;
+	float: left;
+}
+div.joomla h1.title {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 110%;
+    margin: 0;
+}
+div.joomla div.multicolumns h1.title {
+	font-size: 200%;
+	letter-spacing: -1px;
+}
+div.joomla span.icon {
+	display: block;
+	margin-top: 0;
+	float: right;
+}
+p.articleinfo span {
+	margin-right:5px;
+}
+div.joomla div.multicolumns span.icon {
+	margin-top: 5px;
+}
+div.joomla span.edit {
+	margin-left: 10px;
+	float: left;
+}
+div.joomla span.pdf {
+	margin-right: 5px;
+}
+div.joomla span.print {
+	margin-right: 5px;
+}
+div.joomla span.email {
+	margin-right: 5px;
+}
+div.joomla span.printscreen {
+}
+div.joomla p.iteminfo {
+	margin: 0px 0px 15px 0px;
+}
+div.joomla div.articleinfo {
+    background: #ccc;
+	margin:0 0 20px 0;
+	padding:12px 0 12px 15px;
+	font-size:11px;
+	color:#666;
+}
+div.joomla p.articleinfo span.modified, div.joomla p.articleinfo span.author, div.joomla p.articleinfo span.created, div.joomla p.articleinfo span.url {
+	display: block;
+    color: #666666;
+    font-size: 11px;
+    padding-right: 10px;
+}
+div.joomla p.articleinfo span.author {
+	color: #969696; 
+	
+}
+div.joomla p.articleinfo span.created {
+	padding:0;
+}
+/*
+ * com_content
+ * editing an article
+ * sub seletors: edit-article
+ */
+
+div.joomla div.edit-article fieldset {
+	margin-bottom: 30px;
+}
+div.joomla div.edit-article fieldset div {
+	overflow: hidden;
+}
+div.joomla div.edit-article label.label-left {
+	display: block;
+	width: 150px;
+	float: left;
+}
+div.joomla div.edit-article div.save {
+	margin: 0px;
+	float: right;
+}
+div.joomla div.edit-article div#editor-xtd-buttons {
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+div.joomla div.edit-article div#editor-xtd-buttons div {
+	margin: 0px;
+}
+div.joomla div.edit-article div#editor-xtd-buttons div.button2-left {
+	margin-right: 5px;
+}
+div.joomla div.edit-article div#editor-xtd-buttons a:link, div.joomla div.edit-article div#editor-xtd-buttons a:visited, div.joomla div.edit-article div#editor-xtd-buttons a:hover {
+	color: #323232;
+}
+/*
+ * com_weblinks
+ * sub seletors: weblinks
+ */
+
+div.joomla div.weblinks fieldset {
+}
+div.joomla div.weblinks fieldset div {
+	overflow: hidden;
+}
+div.joomla div.weblinks label.label-left {
+	display: block;
+	width: 150px;
+	float: left;
+}
+/*
+ * com_search
+ * sub seletors: search
+ */
+
+div.joomla div.search p.info {
+	margin: 0px;
+	color: #969696;
+	font-style: italic;
+}
+div.joomla div.search span.highlight {
+	background: #ffffaa;
+	padding:0;
+}
+form#searchForm div {
+	margin:0 0 10px 0;
+}
+/*
+ * com_poll
+ * sub seletors: poll
+ */
+
+div.joomla div.poll fieldset {
+	margin: 15px 0px 10px 0px; background-image: none!important;
+}
+/*
+ * com_contact
+ * sub seletors: contact
+ */
+
+div.joomla div.contact h1 {
+	margin-bottom: 0px;
+	font-size: 250%;
+	font-weight: normal;
+	letter-spacing: -1px;
+}
+div.joomla div.contact h2 {
+	margin-bottom: 20px;
+}
+div.joomla div.contact div.image {
+	float: right;
+	padding:0 10px 0 0;
+}
+div.joomla div.contact table {
+	margin-bottom: 10px;
+}
+div.joomla div.contact label.label-top {
+	display: block;
+	padding:5px 0;
+}
+input#contact_email_copy{
+	margin:5px 0;
+}
+/*
+ * com_user
+ * sub seletors: user
+ */
+
+div.joomla div.user label.label-left, div.joomla div.user span.label-left {
+	display: block;
+	width: 130px;
+	float: left;
+}
+/*
+ * mod_newsflash
+ */
+
+div.module-newsflash {
+	overflow: hidden;
+}
+div.module-newsflash div.item {
+	padding-bottom: 15px;
+	overflow: hidden;
+}
+div.module-newsflash div.last {
+	padding-bottom: 0px;
+}
+/*
+ * mod_poll
+ */
+
+div.module-poll ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+div.module-poll ul li {
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+}
+div.module-poll ul li input {
+	margin-right: 5px;
+}
+/*
+ * legacy Joomla styling only for third party components
+ */
+
+.contentheading, .componentheading {
+	border-bottom:1px solid #c9c9c9;margin:0px 0 40px 0;padding-bottom:20px;
+}
+/*
+ * Joomla! system tooltips
+ */
+ 
+.tool-tip {
+	float: left;
+	background: #ffc;
+	border: 1px solid #D4D5AA;
+	padding: 5px;
+	max-width: 200px;
+	color: #323232;
+}
+.tool-title {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	font-weight: bold;
+	margin-top: -15px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	background: url(<?php echo $xtc->templateUrl; ?>../system/images/selector-arrow.png) no-repeat;
+}
+.tool-text {
+	font-size: 100%;
+	margin: 0;
+}
+/* CLEARFIX CSS */
+ /*clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+
+.clearBoth {clear:both;}
+.floatLeft{
+	float:left;
+}
+.floatRight{
+	float:right;
+}
+a.hideTxt, span.hideTxt {
+    display:block;
+}
+.hideTxt { 
+    text-indent:-9999px; 
+}
+/* XTC CSS*/
+
+/* XTC Menus Structure */
+ul.menu > li > ul li > ul {
+visibility:hidden;
+}
+ul.suckerfish li.xtcHover > ul, ul.dropline li.xtcHover > ul, ul.dualfish li.xtcHover > ul {
+	visibility:visible;
+	display:block;
+}
+ul.suckerfish li > ul:hover, ul.dropline li > ul:hover, ul.dualfish li > ul:hover {
+	visibility:visible;
+}
+/* Sucker Fish */
+ul.suckerfish, ul.dropline, ul.dualfish {
+	position:relative;
+	list-style-type:none;
+	z-index:6;
+	margin:0;
+	padding:0;
+}
+ul.suckerfish > li, ul.dropline > li, ul.dualfish > li {
+	display:block;
+	float:left;
+}
+ul.suckerfish > li > a, ul.dropline > li > a, ul.dualfish > li > a {
+	display: block;
+}
+ul.suckerfish ul, ul.dropline ul, ul.dualfish ul {
+	display: block;
+	visibility:hidden;
+	overflow:hidden;
+	position:absolute;
+	top:100px;
+	z-index:9999;
+}
+ul.suckerfish ul:hover, ul.dropline ul:hover, ul.dualfish ul:hover {
+	overflow:visible;
+
+}
+ul.suckerfish ul > li {
+	display:block;
+	position:relative;
+	float:none;
+}
+ul.suckerfish > ul > li > a, ul.dropline > ul > li > a, ul.dualfish > ul > li > a {
+	display:block;
+}
+ul.suckerfish > li > ul > li {
+	position:relative;
+}
+ul.suckerfish > li > ul > li > ul {
+	top:0px;
+}
+/* Drop Line */
+ul.dropline > li > ul {
+	position:absolute;
+	display:block;
+	float:none;
+	left:0px;
+}
+ul.dropline > ul > li {
+	display:block;
+	float:left;
+	width:auto;
+}
+ul.dropline > li > ul > li > ul {
+	position:absolute;
+	left:0px;
+}
+/* Dual Fish*/
+ul.dualfish > li > ul > li {
+	display:block;
+	position:relative;
+	float:left;
+
+}
+ul.dualfish li ul li ul{
+	width:190px !important;
+}
+
+/* 
+ * XTC Menu Decorative 
+ */
+ ul.dualfish li a,ul.suckerfish li a,ul.dropline li a {
+	font-size:12px;
+	font-weight:normal;
+	text-transform: uppercase;
+	text-align:center;
+}
+ ul.dualfish li ul li a,ul.suckerfish li ul li a,ul.dropline li ul li a {
+	font-size:11px;
+	font-weight:normal;
+	text-transform: uppercase;
+}
+ul.dualfish li a span,ul.suckerfish li a span,ul.dropline li a span {
+	margin:-2px 0 0 0;
+	display:block;
+}
+ul.suckerfish li a img,ul.dualfish li a img,ul.dropline li a img {
+    padding:12px 0 0;
+	display:none;
+}
+ul.suckerfish > li, ul.dualfish > li, ul.dropline > li {
+	margin-right:0;
+	padding-bottom:0;
+	background:none;
+	padding-left:0;
+}
+ul.suckerfish > li > a, ul.dualfish > li > a, ul.dropline > li > a {
+	padding:30px 18px 40px 18px;
+	line-height:18px;
+	position:relative;
+}
+ul.suckerfish > li > a:hover, ul.dualfish > li > a:hover, ul.dropline > li > a:hover,
+ul.suckerfish > li.active > a, ul.dualfish > li.active > a, ul.dropline > li.active > a,
+ul.suckerfish > li:hover > a, ul.dualfish > li:hover > a, ul.dropline > li:hover > a {
+	padding:30px 18px 40px 18px; position:relative; z-index:9999;
+}
+ul.suckerfish > li > ul > li:hover > a, ul.dualfish > li > ul > li:hover > a, ul.dropline > li > ul > li:hover > a {
+	padding:12px 22px; position:relative; z-index:9999;
+}
+ul.suckerfish > li.last > a, ul.dualfish > li.last > a, ul.dropline > li.last > a {
+	border-right:none!important;
+}
+/* Suckerfish */
+ul.suckerfish > li > ul {
+	width:160px;
+	padding:8px 20px 4px 20px;
+	
+}
+ul.suckerfish > li > ul > li {
+	width:160px;
+	margin-top:0;
+	padding:0px;
+	
+}
+/* Simulate the UL padding */
+ul.suckerfish > li > ul > li.first {
+}
+ul.suckerfish > li > ul > li.last {
+}
+ul.suckerfish > li > ul > li > a {
+	display:block;
+	padding:14px 14px 14px 0px;
+	margin:0px;
+}
+ul.suckerfish > li > ul > li > ul {
+	margin:-8px 0px 0px 170px;
+}
+/* Dualfish */
+/* Top Level */
+
+ul.dualfish > li > ul {
+	width:380px;
+	margin:3px 0 0 0px;
+	padding:8px 0px 4px 0px;
+}
+ul.dualfish > li > ul > li {
+	width:160px;
+	margin:1px 0px 0px 20px;
+	padding:0px;
+}
+/* Simulate the UL top & botton padding */
+ul.dualfish > li > ul > li.first, ul.dualfish > li > ul > li.first + li {
+}
+ul.dualfish > li.last > a,ul.suckerfish > li.last > a,> ul.dropline > li.last > a {
+	border-right:none;
+}
+ul.dualfish > li > ul > li > a,ul.suckerfish > li > ul > li > a,ul.dropline > li > ul > li > a,ul.dualfish > li > ul > li > a:hover,ul.suckerfish > li > ul > li > a:hover,ul.dropline > li > ul > li > a:hover,ul.dualfish > li > ul > li.active > a,ul.suckerfish > li > ul > li.active > a, ul.dropline > li > ul > li.active > a {
+
+	display:block;
+	padding:12px 8px 12px 0;
+	line-height:14px;
+}
+ul.dualfish > li > ul > li > ul {
+	margin:0;
+  left:160px !important;
+}
+ul.menu > li > ul > li > ul{
+	top:0;
+}
+ul.menu > li.parent > ul > li.parent ul {
+	background: #333;
+}
+ul.dualfish > li > ul.dualfish > li > a,
+ul.suckerfish > li > ul.suckerfish > li > a,
+ul.dropline > li > ul.dropline > li > a
+{
+	*visibility:visible;
+}
+/* Dropline */
+/* Top Level */
+ul.dropline > li > ul {
+	height:auto;
+	width:740px;
+	margin-top:0;
+	padding:0 0 5px 0;
+
+	
+}
+ul.dropline > li > ul > li {
+	width:160px;
+	margin:1px 0px 1px 20px;
+	padding:0px;
+	
+}
+ul.dropline > li > ul > li > a {
+	display:block;
+	margin:0px;
+}
+ul.dropline > li > ul > li > ul {
+	margin:0;
+	top:40px;
+}
+#menu ul.menu li a span.libg {
+    margin:0;
+}
+.quotetxt {
+	font-weight: 100 !important
+}
+.singlearea .module, .lastarea .module {
+	margin-bottom:0;
+}
+/*form and buttons*/
+select, input, button, button {
+	border:none;
+	color:#979594;
+	font-size:14px;
+	margin:0;
+	padding:4px;
+}
+.button {
+    background-color: #939393;
+    background-image: none !important;
+    border: 1px solid #939393;
+    border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    float: left;
+    font-family: Verdana;
+    font-size: 11px;
+    margin-left: 2px;
+    padding: 4px 8px !important;
+    text-align: center;
+}
+.search select#ordering {
+	height:auto;
+}
+input#ccname1, input#ccemail1 {
+	margin-bottom:20px;
+}
+textarea {
+	-moz-border-radius:4px 4px 4px 4px;
+	border-radius:4px 4px 4px 4px;
+	-webkit-border-radius:4px 4px 4px 4px;
+	border:1px solid #DDD9D8;
+	color:#979594;
+	font-size:16px;
+	margin:0 5px 0 0;
+	padding-left:12px;
+}
+input[type="checkbox"], input[type="radio"] {
+	height:auto;
+}
+input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+	-moz-border-radius:4px 4px 4px 4px;
+	border-radius:4px 4px 4px 4px;
+	-webkit-border-radius:4px 4px 4px 4px;
+	color:#979594;
+	padding: 8px;	
+}
+
+.acymailing_module_form td {
+	padding-bottom: 12px!important;}
+/*system message*/
+#xtcmessage{
+	background:#443E3E;
+    z-index:90;
+}
+#xtcmessagepad{
+    padding: 5px;
+}
+#system-message,#system-message dd ul {
+    margin-bottom:0!important;
+}
+dt.error{
+	font-size:20px;
+	line-height:20px;
+	padding:10px;
+	color:#ccc;}
+dd.error{
+	padding:10px;}
+dd.error ul{
+	list-style:none;}
+dd.error ul li{}
+
+#member-registration legend {
+	font-size:20px;
+	margin-bottom:20px;
+}
+
+#member-registration .spacer #jform_spacer-lbl, #user-registration p {
+	clear:both;
+	margin-bottom:20px;
+}
+
+#jform_name-lbl, #jform_username-lbl, #jform_password1-lbl, #jform_password2-lbl, #jform_email1-lbl, #jform_email1, #jform_email2-lbl,
+#jform_email-lbl {
+	float:left;
+	clear:left;
+	width:170px;
+	font-size:14px;
+	text-align:right;
+	padding-right:20px;
+}
+
+#member-registration dd, #user-registration dd {
+	float:left;
+	margin-bottom:20px;
+}
+
+#member-registration input, #member-registration textarea, #member-registration select,
+#user-registration input, #user-registration textarea, #user-registration select,
+#jform_email .validate-email,
+#jform_contact_email,
+.form-validate input {
+
+	outline-width: medium;
+	outline-style: none;
+	outline-color: -moz-use-text-color;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	color: #979594;
+	padding-top: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	width:200px;
+}
+
+.imagegalleryplg img {
+	margin:0px 0px 8px 0px;
+	color:#fff;
+	padding:0px!important;
+	border:6px solid #ccc;
+	-moz-box-shadow:none!important;
+	-webkit-box-shadow:none!important;
+	box-shadow:none!important;
+}

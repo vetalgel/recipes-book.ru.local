@@ -1,0 +1,152 @@
+/*******************************************
+***          YT Framework: less          ***
+*******************************************/
+
+//Please select custom site here
+// 2.Color Variables
+@import "color/variables_color.less";
+
+#top1{
+    .mod-languages ul.dropdown-menu{min-width: 95px; padding-bottom: 0;
+        li a{padding: 7px;}
+    }
+}
+#banner{margin-bottom: 20px;}
+#g-about .customersay .yt-extra-carousel .carousel-control{
+    .fa-angle-left:before{line-height: 10px;}
+
+}
+.module.jshopcat{margin-bottom: 0;
+    .sj-categories{margin-top: 26px; margin-bottom: 0;}
+}
+
+.btn-special{
+    .icon-pushpin:before{content: "\f08d"; text-decoration: inherit; display: inline-block; speak: none; font-family: FontAwesome;}
+}
+
+#top2{
+
+            ul.yt-loginform.menu {
+                li{list-style: none;display: inline;
+                     a{padding: 0 10px ;position: relative; line-height: 53px; border-right: 1px solid #ccc;color: #fff;font-size: 12px;font-family: arial;
+
+                     &:hover{color: @linkColor;
+
+                     }
+                     }
+                     &:nth-child(3){
+
+                     }
+
+
+                }
+                #myLogin{
+                     form.form-inline{
+                          ul li a{ border-right: none;}
+                     }
+                }
+           }
+           ul.yt-loginform{
+                li.yt-login{}
+                li.yt-register{}
+           }
+           #logout-form{text-align: right;
+                .logout-button{padding: 0 7px 0 7px;}
+
+           }
+
+
+}
+.yt-loginform li{list-style: none;}
+//SJ Login Form
+
+#myLogin{color: @gray;.border-radius(0);border: none; background: #fff;
+     h3.title{font-size: 220%;margin-bottom: 15px;background: #eee;border-bottom: 1px solid #ddd;text-align: left; padding: 10px 20px;;}
+     .userdata{padding-left: 20px; padding-right: 20px;}
+     ul.listlogin{border-top: 1px solid #ddd;padding-top: 1em;margin: 0;
+          li{padding: 5px 0;
+               a{color: @gray !important;
+               &:hover{color: @linkColor !important;}
+               }
+
+          }
+     }
+
+      &.modal{
+                    position: fixed; top: 50%;left: 50% !important;  z-index: @zindexModal;  overflow: auto;  width: 560px; height: 300px; margin: -250px 0 0 -280px;  background-color: @white;  border: 1px solid #999;  border: 1px solid rgba(0,0,0,.3);  *border: 1px solid #999; /* IE6-7 */
+            .box-shadow(0 3px 7px rgba(0,0,0,0.3)); .background-clip(padding-box);
+              &.fade {.transition(e('opacity .3s linear, top .3s ease-out')); top: -25%; }
+             &.fade.in { top: 50%; }
+              }
+
+}
+
+.mod-jcurrency{width: 107px;
+    select option{background: @background1;}
+}
+.productfull .jshop_product .c_product .jshop_prod_attributes .clist .slist .sl select{width: 250px; padding-right: 0;
+    option{width: 250px;}
+}
+.jCarouselLite ul li{display: inline;}
+
+.jshop_list_product .block_sorting_count_to_page .box_products_count_to_page .wrap-inputbox select,
+.jshop_list_product .block_sorting_count_to_page .box_products_sorting .wrap-inputbox select{padding-left: 10px;}
+
+
+
+//RTL
+.rtl{
+    .jshop {
+         #checkout{
+            .td_1{text-align: right;}
+            .td_2{text-align: left;}
+        }
+        .jshop_list_product form{width: 100%; float: right; margin-bottom: 27px;
+            .block_sorting_count_to_page{display: block; width: 100%;float: right;}
+            .box_products_sorting{float: left;}
+        }
+    }
+    .sj-categories .cat-wrap.theme2 .content-box .parent-cat{float: right;}
+    blockquote{border-right: 0;}
+
+    #g-about .customersay .yt-extra-carousel .carousel-control{
+        &.right{left: 10px !important; right: auto !important;}
+        &.left{left: 45px !important; right: auto !important;}
+    }
+    #g-about .customersay .cus-title{right: 30px; top: -21px; left: auto; }
+    .dl-horizontal dt{text-align: right !important;}
+
+    .jcatemega .mega-module-content .jshop_menu_level_0{background: url(../images/icon/bglim.png) right no-repeat;}
+
+    #yt_mainmenu #meganavigator .level1.havechild.shop .mega-content{left: -157px !important;}
+   pre{border-left: 0; border-right: 3px solid @background1 ;  direction: rtl;}
+   .jshop .cart .product_name{text-align: right;}
+   .jshop_subtotal .value{text-align: left;}
+   .jshop_subtotal .name{padding-right: 0;}
+
+   .mod-languages a.dropdown-toggle{padding: 2px 11px;
+        img{margin-left: 5px; margin-right: 0;}
+   }
+   #top1 .mod-languages ul.dropdown-menu li a{padding: 7px 11px;}
+
+
+   .container-slider .slider .vpo-wrap .vp .item .item-wrap .item-info{
+        .item-inner{text-align: right;}
+        .item-review{text-align: right; width: 100%;}
+   }
+   .sjshopcate_slide .categoryslider-content .icon-cate{right: 0;}
+
+   .menu-top-mobile li ul{left: -3px;}
+
+   .productfull #tabs-pro #tabs_container .tab-item .tab-item-inner .pro-review .review_mark .stars_no_active{direction: ltr;}
+   .related_pro .jshop_list_product tr td .product .content_product .review_mark .stars_no_active,
+   .jshop_list_product .list_product .block_product .product .content_product .review_mark .stars_no_active{direction: ltr;}
+
+   .jshop_list_product .block_sorting_count_to_page .box_products_count_to_page .wrap-inputbox select,
+.jshop_list_product .block_sorting_count_to_page .box_products_sorting .wrap-inputbox select{padding-right: 10px; padding-left: 0;}
+.productfull .jshop_product .c_product .jshop_prod_attributes .clist .slist{direction: ltr;}
+
+.jmycart{float: left;}
+.yt-loginform{float: left;}
+.menu-top li a{padding: 5px;}
+}

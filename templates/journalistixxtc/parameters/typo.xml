@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<name>Default</name>
+	<description>Default Typography</description>
+   <fields name="params">
+	<fieldset name="basic">
+		<field name="direction" type="radio" default="ltr" label="Text Direction" description="Choose the text direction for the template.">
+			<option value="ltr">LTR</option>
+			<option value="rtl">RTL</option>
+		</field>
+		<field name="body_fontSize" type="text" default="11" label="Global Font Size" description="Set The Body/Global Font Size"/>
+		<field name="body_fontFamily" type="text" default="Arial" label="Global Font Family" description="Select The Global Font Family"/>
+		<field name="comHead_fontSize" type="text" default="36px" label="Component Font Size" description="Set The Component Heading Font Size. Affects only .componentheading, will not change all component heads"/>
+		<field name="comHead_fontFamily" type="text" default="Arial" label="Component Heading Font Family" description="Set The Component Heading Font Family"/>
+		<field name="conHead_fontSize" type="text" default="24" label="Content Heading Font Size" description="Set The Content Heading Font Size. Affects only .contentheading, will not change all content heads"/>
+		<field name="conHead_fontFamily" type="text" default="Times New Roman,Times,serif" label="Content heading Font Family" description="Set The Content Heading Font Family"/>
+		<field name="modHead_fontSize" type="text" default="14" label="Module Title Font Size" description="Set The Mod Title Size"/>
+		<field name="cfonts" type="radio" class="btn-group" default="1" label="Use Cufon Fonts" description="Enable or Disable Cufon fonts calls.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="gfonts" type="radio" class="btn-group" default="1" label="Use Google Fonts" description="Enable or Disable Google fonts calls.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		 <field name="linkSize" type="list" default="12" label="Link Font Size" description="Link Font Size">
+        <option value="8">8</option>
+        <option value="9">9</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+		<option value="13">13</option>
+		<option value="14">14</option>
+		<option value="15">15</option>
+		<option value="16">16</option>
+        </field>
+		 <field name="linkFont" type="list" default="Arial, Helvetica, sans-serif" label="Link Font Family" description="Link Font Family">
+        <option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
+		<option value="Verdana, Geneva, sans-serif">Verdana, Geneva, sans-serif</option>
+		<option value="Tahoma, Geneva, sans-serif">Tahoma, Geneva, sans-serif</option>
+		<option value="Georgia, Times New Roman, Times, serif">Georgia, Times New Roman, Times, serif</option>
+		</field>
+		 <field name="linkdecoration" type="list" default="none" label="Link Decoration" description="Link Decoration">
+        <option value="none">None</option>
+		<option value="underline">Underline</option>
+		</field>
+		 <field name="linkdecorationhover" type="list" default="none" label="Link Decoration On Hover" description="Link Decoration On Hover">
+        <option value="none">None</option>
+		<option value="underline">Underline</option>
+		</field>
+		 <field name="h1" type="list" default="68" label="H1" description="H1">
+        <option value="68">68</option>
+		<option value="32">32</option>
+        <option value="24">24</option>
+		<option value="22">22</option>
+		<option value="20">20</option>
+		<option value="18">18</option>
+		<option value="16">16</option>
+		<option value="14">14</option>
+		<option value="12">12</option>
+		<option value="10">10</option>
+        </field>
+		 <field name="h2" type="list" default="24" label="H2" description="H2">
+        <option value="32">32</option>
+        <option value="24">24</option>
+		<option value="22">22</option>
+		<option value="20">20</option>
+		<option value="18">18</option>
+		<option value="16">16</option>
+		<option value="14">14</option>
+		<option value="12">12</option>
+		<option value="10">10</option>
+        </field>
+		 <field name="h3" type="list" default="24" label="H3" description="H3">
+        <option value="30">30</option>
+        <option value="24">24</option>
+		<option value="22">22</option>
+		<option value="20">20</option>
+		<option value="18">18</option>
+		<option value="16">16</option>
+		<option value="14">14</option>
+		<option value="12">12</option>
+		<option value="10">10</option>
+        </field>
+		 <field name="h4" type="list" default="12" label="H4" description="H4">
+        <option value="30">30</option>
+        <option value="24">24</option>
+		<option value="22">22</option>
+		<option value="20">20</option>
+		<option value="18">18</option>
+		<option value="16">16</option>
+		<option value="14">14</option>
+		<option value="12">12</option>
+		<option value="10">10</option>
+        </field>
+		 <field name="h5" type="list" default="12" label="H5" description="H5">
+        <option value="30">30</option>
+        <option value="24">24</option>
+		<option value="22">22</option>
+		<option value="20">20</option>
+		<option value="18">18</option>
+		<option value="16">16</option>
+		<option value="14">14</option>
+		<option value="12">12</option>
+		<option value="10">10</option>
+        </field>
+		 <field name="h6" type="list" default="12" label="H6" description="H6">
+        <option value="30">30</option>
+        <option value="24">24</option>
+		<option value="22">22</option>
+		<option value="20">20</option>
+		<option value="18">18</option>
+		<option value="16">16</option>
+		<option value="14">14</option>
+		<option value="12">12</option>
+		<option value="10">10</option>
+        </field>
+	</fieldset>
+	</fields>
+</form>

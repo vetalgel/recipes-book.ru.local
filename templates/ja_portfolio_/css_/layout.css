@@ -1,0 +1,67 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA Portfolio Template for Joomla 2.5
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+/* MAIN LAYOUT DIVS
+--------------------------------------------------------- */
+/* Gutter ---*/
+.main .inner {
+	padding-left: 10px; /* We use liquid layout, so we need to insert a div which will create margin if need */
+	padding-right: 10px;
+}
+
+.main .main-inner1 {
+	margin-left: 5px; /* We use liquid layout, so we need to insert a div which will create margin if need */
+	margin-right: 5px;
+}
+
+.column div.ja-moduletable, .column div.moduletable, .column div.ja-module, .column div.module {
+	margin-left: 10px; /* for side columns and spotlight, we only need to add margin or padding to Module */
+	margin-right: 10px;
+}
+
+#ja-right div.ja-moduletable, #ja-right .div.moduletable, #ja-right div.ja-module, #ja-right div.module {
+	margin-right: 5px;
+}
+
+#ja-left div.ja-moduletable, #ja-left .div.moduletable, #ja-left div.ja-module, #ja-left div.module {
+	margin-left: 5px;
+}
+
+.ja-inset2 div.ja-moduletable, .ja-inset2 .div.moduletable, .ja-inset2 div.ja-module, .ja-inset2 div.module {
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.ja-inset1 div.ja-moduletable, .ja-inset1 .div.moduletable, .ja-inset1 div.ja-module, .ja-inset1 div.module {
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+.item .contentpaneopen {
+	padding-left: 20px; /* for article columns, we only need to add margin or padding to this div  */
+	padding-right: 20px;
+}
+
+.items-leading {
+}
+
+.system-unpublished {
+	border-bottom: none;
+	border-top: none;
+}
+
+.article_row,
+.items-leading,
+.items-row {
+	margin-left: -20px; /* minus the spacing of the article row to macth with the Gutter & global grid */
+	margin-right: -20px;
+}

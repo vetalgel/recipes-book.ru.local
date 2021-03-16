@@ -1,0 +1,182 @@
+body {background:<?php echo $params->bodyImgbackgroundcolor; ?> url(<?php echo $imgpath; ?>/<?php echo $params->bodyImg_name; ?>) <?php echo $params->bodyImgposition; ?>;color:<?php echo $params->body_color; ?>;}
+/*headings,links,titles*/
+.contentheading,div.itemListCategory h2, .component h3, .content h3, .blogArticleTitle, .articleTitle, .blogItem-bg a {color:<?php echo $params->conHead_color; ?>!important;}
+.componentheading {color:<?php echo $params->comHead_color; ?> !important;}
+a {color:<?php echo $params->link_color; ?>;}
+a:visited{color:<?php echo $params->linkvisited_color; ?>;}
+a:hover{color:<?php echo $params->linkhover_color; ?>;}
+a:active {color:<?php echo $params->linkactive_color; ?> ;}
+h1 {color:<?php echo $params->h1_color; ?>;}
+h2 {color:<?php echo $params->h2_color; ?>;}
+h3 {color:<?php echo $params->h3_color; ?>;}
+h4 {color:<?php echo $params->h4_color; ?>;}
+h5 {color:<?php echo $params->h5_color; ?>;}
+h6 {color:<?php echo $params->h6_color; ?>;}
+p{color:<?php echo $params->p_color; ?>;}
+.basecolor_1 {color:<?php echo $params->basecolor1; ?> !important;}
+.basecolor_2 {color:<?php echo $params->basecolor2; ?> !important;}
+.basecolor_3 {color:<?php echo $params->basecolor3; ?> !important;}
+.basecolor_4 {color:<?php echo $params->basecolor4; ?> !important;}
+.articlebadgeWrap  {background-color: <?php echo $params->basecolor3; ?> !important;}
+.jcomments-links a{color: <?php echo $params->basecolor3; ?> !important;}
+.contentheading,.componentheading {border-bottom:1px solid #ccc;}
+/* XTC MENUS  */
+/* Top Level */
+#menu ul.menu > li{background: <?php echo $params->menulibg_bgcolor; ?> url(<?php echo $imgpath; ?>/menus/<?php echo $params->menulibg_bg; ?>) <?php echo $params->menulibg_bgimageposition; ?>;}
+#menu ul.menu > li.parent:hover {background: <?php echo $params->menubg_lihoverimagebgcolor; ?> url(<?php echo $imgpath; ?>/menus/<?php echo $params->menubg_lihoverimage; ?>) <?php echo $params->menubg_lihoverimageposition; ?>;}
+#menu ul.menu > li > a {color:<?php echo $params->menufont_color; ?>; }
+#menu ul.menu > li.active {background: <?php echo $params->menubg_liactiveimagebgcolor; ?> url(<?php echo $imgpath; ?>/menus/<?php echo $params->menubg_liactiveimage; ?>) <?php echo $params->menubg_liactiveimageposition; ?>;}
+#menu ul.menu > li.active > a {color:<?php echo $params->menufontactive_color; ?>;background: <?php echo $params->menubg_activeimagebgcolor; ?> url(<?php echo $imgpath; ?>/menus/<?php echo $params->menubg_activeimage; ?>) <?php echo $params->menubg_activeimageposition; ?>;}
+#menu ul.menu > li#current:hover {background:none;}
+#menu ul.menu li a span.libg {
+	background: <?php echo $params->menubg_liahoverimagebgcolor; ?> url(<?php echo $imgpath; ?>/menus/<?php echo $params->menubg_liahoverimage; ?>) <?php echo $params->menubg_liahoverimageposition; ?>;
+}
+#menu ul.menu li.parent:hover a{color:<?php echo $params->dropfont_color; ?>;}
+/* Drop Levels */
+#menu ul.menu li > ul {background-color:<?php echo $params->dropbg_color; ?>;-moz-box-shadow:0 7px 7px rgba(0, 0, 0, 0.6);-webkit-box-shadow:0 7px 7px rgba(0, 0, 0, 0.6);box-shadow:0 7px 7px rgba(0, 0, 0, 0.6);
+-moz-border-radius:0 0 5px 5px;-webkit-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px;}
+#menu ul.menu li.parent > ul > li {background:url(<?php echo $imgpath; ?>/menus/<?php echo $params->menuline; ?>) repeat-x left bottom;	}
+#menu ul.menu li > ul > li > a {color:<?php echo $params->dropfont_color; ?>; background:url(<?php echo $imgpath; ?>/menus/<?php echo $params->menuline; ?>) repeat-x left bottom;border-bottom:1px solid #323131;padding-left:15px; }
+#menu ul.menu li.parent > ul > li.active > a {color:<?php echo $params->dropfontactive_color; ?>;}
+#menu ul.menu li.parent > ul > li > a:hover {color:<?php echo $params->dropfonthover_color; ?>; display:block; }
+/* Region 1
+/* ----------------------------------------------*/
+#region1wrap {background: <?php echo $params->region1wrap; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region1wrapimage; ?>) <?php echo $params->region1wrapposition; ?>;}
+#region1 {background: <?php echo $params->region1; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region1image; ?>) <?php echo $params->region1position; ?>;}
+/* Region 2
+/* ----------------------------------------------*/
+#region2wrappad {background: <?php echo $params->region2wrap; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region2wrapimage; ?>) <?php echo $params->region2wrapposition; ?>;border-bottom:6px solid #d5d5d5;}
+#region2wrap {border-bottom:0px solid #d6d6d6;}
+#region2shadow {background: url(<?php echo $imgpath; ?>/inner_container2_shadow.png) repeat-x 0 0 ;height: 15px;width: 100%;}
+#region2 {background: <?php echo $params->region2; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region2image; ?>) <?php echo $params->region2position; ?>;}
+/* Region 3
+/* ----------------------------------------------*/
+#region3wrap {background: <?php echo $params->region3wrap; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region3wrapimage; ?>) <?php echo $params->region3wrapposition; ?>;}
+#region3{background: <?php echo $params->region3; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region3image; ?>) <?php echo $params->region3position; ?>;}
+/* Region 4
+/* ----------------------------------------------*/
+#region4wrap {background: <?php echo $params->region4wrap; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region4wrapimage; ?>) <?php echo $params->region4wrapposition; ?>;padding-top:15px;}
+#region4wrappad {background: <?php echo $params->region4; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region4image; ?>) <?php echo $params->region4position; ?>;border-bottom:1px solid #ebebeb;}
+/* Region 5
+/* ----------------------------------------------*/
+#region5wrap {background: <?php echo $params->region5wrap; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region5wrapimage; ?>) <?php echo $params->region5wrapposition; ?>;}
+#region5 {background: <?php echo $params->region5; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region5image; ?>) <?php echo $params->region5position; ?>;}
+/* Region 6
+/* ----------------------------------------------*/
+#region6wrap {background: <?php echo $params->region6wrap; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region6wrapimage; ?>) <?php echo $params->region6wrapposition; ?>;}
+#region6 {background: <?php echo $params->region6wrap; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region6wrapimage; ?>) <?php echo $params->region6wrapposition; ?>;}
+/* Region 7
+/* ----------------------------------------------*/
+#region7wrap {color:#4e4c4a;padding:21px 0 !important;background: <?php echo $params->region7wrap; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region7wrapimage; ?>) <?php echo $params->region7wrapposition; ?>;}
+#region7 {background: <?php echo $params->region7; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region7image; ?>) <?php echo $params->region7position; ?>;}
+/* Region 8
+/* ----------------------------------------------*/
+#region8wrap {background: <?php echo $params->region8wrap; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region8wrapimage; ?>) <?php echo $params->region8wrapposition; ?>;}
+#region8{background: <?php echo $params->region8; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region8image; ?>) <?php echo $params->region8position; ?>;}
+/* Region 9
+/* ----------------------------------------------*/
+#region9wrap {background: <?php echo $params->region9wrap; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region9wrapimage; ?>) <?php echo $params->region9wrapposition; ?>;padding:17px 0 0 0;}
+#region9{background: <?php echo $params->region9; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region9image; ?>) <?php echo $params->region9position; ?>;}
+/* Region 10
+/* ----------------------------------------------*/
+#region10wrap {background: <?php echo $params->region10wrap; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region10wrapimage; ?>) <?php echo $params->region10wrapposition; ?>;padding:17px 0 0 0;}
+#region10{background: <?php echo $params->region10; ?> url(<?php echo $imgpath; ?>/backgrounds/<?php echo $params->region10image; ?>) <?php echo $params->region10position; ?>;}
+.button {background:#777!important;border:none!important;color:bbb!important;}
+
+
+
+/*LINKS*/
+#region5 a {color:#b58e3e;}
+/*MODULE*/
+.module {
+    background:<?php echo $params->modbkgcolor;?> url('<?php echo $imgpath; ?>/backgrounds/<?php echo $params->modbkgimage; ?>') <?php echo $params->modbkgposition;?>;
+    border-color:<?php echo $params->modbkgbordercolor;?>;
+    border-style: <?php echo $params->modbkgborderstyle;?>;
+    border-width: <?php echo $params->modbkgborderwidth;?>;
+}
+.module h3{
+    padding:<?php echo $params->modiconpad;?>;
+    border-width:<?php echo $params->modtitleborderwidth;?>;
+    border-style: <?php echo $params->modtitleborderstyle;?>;
+    border-color:<?php echo $params->modtitlebordercolor;?>;
+    background: <?php echo $params->modtitlebkgcolor;?> url(<?php echo $imgpath;?>/icons/<?php echo $params->modicon;?>) <?php echo $params->modiconimageposition;?>;
+}
+/*H3*/
+.module h3 span.first_word{color:<?php echo $params->modtitlefirstword;?>!important;}
+.module h3 span.rest{color:<?php echo $params->modtitlesecondword;?>!important;}
+.module h3{color:#6b6b6b;}
+#region9 h3 {color:#939393;font-family:Arial, Helvetica, sans-serif;font-size:12px !important;font-weight:normal;padding:1px 45px 8px 6px;background:#414141;-moz-border-radius: 4px;-webkit-border-radius: 4px;}
+#region9 h3 span.first_word {color:#939393!important;font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;}
+#region9 ul li {border-bottom:1px solid #575757;}
+#region9 ul li a {color:#888888;}
+#region9 ul li a:hover {color:#bbbbbb;}
+.mainslideshow {background:url(<?php echo $imgpath; ?>/<?php echo $params->mainslideshow; ?>) <?php echo $params->mainslideshowposition;?>;}
+#mainnewsletter {border-top:1px solid #ccc;}
+#mainnewsletter h3 {color:#7e97aa;}
+.normalsublayout label {color:#a1a2a2;}
+.normalsublayout .input_bg {background:url('<?php echo $imgpath; ?>/input_bg.gif') no-repeat 0 0;}
+.normalsublayout input {background:none;}
+.normalsublayout .input_bg1 {background:url('<?php echo $imgpath; ?>/input_bg1.gif') no-repeat 0 0;}
+.normalsublayout input.size1 {width:108px;float:left;padding:3px 5px 0;}
+.normalsublayout input.btn {background:url('<?php echo $imgpath; ?>/submit_btn.png') no-repeat 0 0;}
+#region9wrap .textarea {background:#414141 !important;}
+/* Wall Stylings */
+.titlecolor {color:#957f5c !important;}
+span.date {color:#888888;font-size:10px;}
+.readMoreWrap {margin-bottom:10px;}
+a.readmore, a.readon {
+	color:#333333;
+	font-size:10px;
+	padding:4px 8px 4px 8px;
+	background:#cdc3af;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+/** Events **/
+.event {border-bottom:1px dotted #cccccc;}
+.event .date {background-color:<?php echo $params->basecolor4; ?>;}
+.event .date .day {color:#ffffff;}
+.event .date .month {color:#ffffff;}
+.event .eventText .title {color:<?php echo $params->basecolor4; ?>;}
+.event .eventText .text {color:#b9bdb8;}
+/** Kunena Overrides **/
+Kunena a:link, #Kunena a:visited {color:<?php echo $params->basecolor4; ?>}
+#Kunena a:hover {color:<?php echo $params->basecolor4; ?>}
+#Kunena .fb_header div#fb_topmenu a {background: transparent;color:<?php echo $params->basecolor4; ?> !important;border-right:1px solid #cccccc;margin-top:8px;} 
+/* topmenu link items */
+#Kunena .fb_header div#fb_topmenu a:hover {background: transparent;color: #666;margin-top:8px;} 
+#fb_searchbox .fb_search_inputbox {border: 1px solid #666666;background: #FFFFFF url(images/search_icon.gif) no-repeat 5px center;}
+.fb_search-results {color:#FF0000;}
+#Kunena table.fb_blocktable thead tr th {border-bottom: 1px solid #ccc;}
+#Kunena div.fb_title_cover {color: #666666;}
+#Kunena .fb_title {color:<?php echo $params->basecolor4; ?> !important;}
+#Kunena .fb_header {margin-top:5px;}
+#Kunena tr.fb_sth {background: #ebebeb;}
+th.fb_sectiontableheader {border-bottom: 2px solid <?php echo $params->basecolor4; ?>;color:#b2b2b2;}
+#Kunena tr.fb_sectiontableentry1 td {color: #957f5c;border-bottom: 1px solid #ccc;}
+#Kunena tr.fb_sectiontableentry1 td.td-1 {border-bottom: 1px solid #ccc;}
+#Kunena tr.fb_sectiontableentry2 td {color: #957f5c;border-bottom: 1px solid #ccc;}
+#Kunena tr.fb_sectiontableentry2 td.td-1 {border-bottom: 1px solid #ccc;}
+#Kunena div.fb_thead-child {border-top: 3px solid #b2b2b2;}
+#Kunena .fbm {font-family:Arial, Helvetica, sans-serif !important;font-size:11px;}
+div.fb_thead-desc {color:#777777;}
+#Kunena tr.fb_sectiontableentry1 td {color:#777777;}
+#Kunena a.fbrecent {color:#777777;}
+/* BASIC TEXT COLOR STYLING */
+.textcolor1 {color:#ab926b !important;}
+.textcolor2 {color:#864a4a !important;}
+
+.abme {border-bottom:1px solid #cccccc;}
+.quill {background: url(<?php echo $imgpath;?>/quill1.png) top left no-repeat;}
+.seal {background: url(<?php echo $imgpath;?>/seal-green.png) center no-repeat;}
+/* JCOMMENTS OVERIDES */   
+#jc h4 {color: #555;border-bottom: 1px solid #D2DADB;}
+/* K2 STYLING */
+div.itemHeader h2.itemTitle {color:<?php echo $params->basecolor4; ?> !important;}
+div.catItemHeader h3.catItemTitle {color:<?php echo $params->basecolor4; ?> !important;}
+.badgeWrap {background-color: <?php echo $params->basecolor3; ?> !important;}
+.toolbarItem .link {color:<?php echo $params->basecolor3; ?> !important;}
+/* BOTTOM FORM STYLING */
+#mailfield {background: #414141;color:#999999;}
+#formarea {background: #414141;color:#999999;}
+#formsubmit {background: #393939;color:#999999;}
